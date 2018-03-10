@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3. MVC-LH · GitBook</title>
+        <title>3. Dependency Injection · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -133,7 +133,7 @@
                 <a href="./">
             
                     
-                    3. MVC-LH
+                    3. Dependency Injection
             
                 </a>
             
@@ -275,7 +275,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3. MVC-LH</a>
+        <a href=".." >3. Dependency Injection</a>
     </h1>
 </div>
 
@@ -290,8 +290,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="project-title">Project Title</h1>
-<p>Description</p>
+                                <h1 id="dependency-injection">Dependency Injection</h1>
+<p>Model, View, Controller, Logic, Handler - a hyper-modular approach to application design.  By extending the MVC architecture to include separate code for the Logic and the Handlers you will have a (relatively) intuitive way to begin exploring modular application design.</p>
+<p>You&apos;ll see how to repackage the same core functionality for deployment in different environments, or how to easily swap out functionality in an application already built for one environment.  </p>
+<p>You&apos;ll be reading, running, diagramming and documenting code.  No writing code this time.</p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
@@ -301,8 +303,48 @@
 </ul>
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
-<p>overview</p>
-<p>list</p>
+<ul>
+<li>MVC-LH</li>
+<li>Dependency Injection</li>
+<li>App/Component Architecture</li>
+</ul>
+<h3 id="dependency-injection">Dependency Injection</h3>
+<p>As you&apos;ve already seen by using pseudocode and using specs to study source code, functionality and implementation are not the same thing.  This idea is central to Dependency Injection.</p>
+<p>Imagine a basic VC application with Controller &amp; View objects:</p>
+<ul>
+<li>View: Object<ul>
+<li>Methods: 1<ul>
+<li>render: Function<ul>
+<li>Args: 1<ul>
+<li>phrase: String</li>
+<li>Purpose: To be drawn onto the UI, for the user to see</li>
+</ul>
+</li>
+<li>Returns: undefined</li>
+<li>Behavior: Writes <em>phrase</em> into the UI</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Controller: Object<ul>
+<li>Methods: 1<ul>
+<li>show_this: Function<ul>
+<li>Args: 1<ul>
+<li>phrase: String</li>
+<li>Purpose: A string to be displayed to the user</li>
+</ul>
+</li>
+<li>Returns: undefined</li>
+<li>Behavior: Calls view.render() with <em>phrase</em> as an argument.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
@@ -373,7 +415,7 @@ links to repo if there is a larger code-based assessment</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. MVC-LH","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-mvc-lh/README.md","mtime":"2018-02-27T12:42:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-10T12:20:13.772Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3. Dependency Injection","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-dependency-injection/README.md","mtime":"2018-03-10T14:47:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-10T15:19:56.412Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
