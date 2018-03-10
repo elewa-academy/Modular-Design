@@ -1,0 +1,76 @@
+To be added to forever  
+At the beginning of every new tool, they add to the mix-n-match  
+a place to experiment
+  
+Graphize this:  terminal, express, dom paths.  
+  
+come up with a collection of mvc-lh's  
+  * in whatever order you like  
+  * to be fit together however you like  
+
+models  
+* temp/local  variable  
+* writes to file  
+* mongoose  
+logics  
+* simplest  
+* round one of tests  
+* round two of tests  
+* imaginary numbers  
+* api you write  
+views  
+* terminal  
+* dom  
+* ejs  
+* res.sends  
+* marko?  
+* react   
+handlers 
+* the sames  
+controller  
+* pure js  
+the app object  
+* composes any collection of these things   
+
+* in terminal    
+  * simple calc obj  
+  * some tests    
+* in dom  
+  * simple calc object  
+* mvc calc replacement
+  * terminal  
+  * dom 
+* mvc-lh calc  
+  * refactor calc  
+* dom app  
+  * not gulp built  
+* terminal app  
+  * not interactive
+* dom app  
+  * gulp built  
+* terminal app
+  * interactive  
+* express app calc  
+  * use calc in middleware  
+* express app  
+  * use     
+express ssr app  
+  persistent
+express ssr app  
+  not persistent
+express spa  
+
+an async path  
+a terminal path  
+a dom path  
+an express path  
+an mvc path  
+an mvc-lh path  
+a gulp path  
+a spa path  
+hand-built testing suite (cont obj)  
+jasime testing suite (cont obj)  
+local moduling certain combinations  
+  
+  
+mcl is local module

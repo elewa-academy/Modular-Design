@@ -1,0 +1,22 @@
+process
+	modular
+	
+
+computer
+	the code
+	bundling
+	babel and browserify
+	tests
+
+user
+	views
+	handlers
+	controllers
+	ui/x
+	tests
+
+devs
+	folder structure
+	docs
+	tests
+	separation of concerns

@@ -1,0 +1,1 @@
+firebase-model.js

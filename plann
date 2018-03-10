@@ -1,0 +1,110 @@
+new series
+	upjs
+	george mvc
+	mvclh
+		- browser
+		george refactored
+		calcs (a few basics)
+		dom x console
+	async
+	crud
+		- browser
+		dom x console
+		model object w/ array
+	crud
+		- node terminal
+		- bound to directory location
+		model object w/ fs
+	commander
+		- install -g
+		- can access same file from anywhere
+	full editor
+		- can edit files where you are
+	awesome final project
+		auto-generate app/component directory structure
+		https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309
+
+
+
+
+
+
+
+
+
+finished codes
+	- single responsibility principle
+	ultra practical javascript
+	george's mvc stuff
+		https://www.youtube.com/watch?v=SwZ5yO60gJk&t=2s
+		and the matching code
+	cleancalc
+		v+h -> t x b
+	mvclh
+		- put it all in, pick it apart together and alone
+		components
+			logic & controller
+				f's
+				oops
+			models
+				array
+				variable
+				object
+				model object last result
+				model object multiple last results
+		app.js
+			oop
+				logic object
+			proced
+				require math functions
+				call them in order
+			build objec
+				require functions
+				set as props in controller
+				operate - this[input](a,b) -> result or error
+	async mvclh 
+		- callbacks only
+		oop x f'al
+		proc x oop
+		t x b
+	command app
+		crud app
+		commander.js
+		model
+			fs
+			a text file
+	final
+		most basic command line text editor
+		plan
+			most basic commander app
+			mvclh commander app, crud model with array
+			replace array with fs
+			that should be it?
+		how it works
+			create
+				wraps touch
+				fs writes whatever's after that
+			read
+				fs reads the contents
+				logs to console
+			update
+				finds designated file
+				overwrites with next args
+			delete
+				wraps rm
+		resources
+			comm tuts
+				** https://javascriptplayground.com/node-command-line-tool/
+					search. can fit nicely with editor
+				** https://medium.freecodecamp.org/writing-command-line-applications-in-nodejs-2cf8327eee2
+					list files
+				http://cruft.io/posts/node-command-line-utilities/
+				* https://modernweb.com/writing-a-command-line-utility-using-node/
+				https://modernweb.com/writing-a-command-line-utility-using-node/
+					basic intro
+			fs
+			keyboard shortcuts for navigating text in terinal
+
+
+
+
