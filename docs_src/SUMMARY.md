@@ -3,7 +3,7 @@
 * [Welcome](README.md)   
 * [1. Ultra-Practical Javascript](00-ultra-practical-javascript/README.md)
 * [2. MVC](01-mvc/README.md)
-* [3. MVC-LH](02-mvc-lh/README.md)
+* [3. Dependency Injection](02-dependency-injection/README.md)
 * [4. Callbacks](03-callbacks/README.md)
 * [5. CRUD - Browser](04-crud-browser/README.md)
 * [6. CRUD - Terminal](05-crud-terminal/README.md)

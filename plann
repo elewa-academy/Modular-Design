@@ -5,7 +5,13 @@ new series
 		- browser
 		george refactored
 		calcs (a few basics)
-		dom x console
+		samples
+			app/component
+				calc
+					dom x console
+				mvc list
+			inverted
+				tictactoe
 	async
 	crud
 		- browser
