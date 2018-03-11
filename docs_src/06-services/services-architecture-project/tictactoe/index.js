@@ -21,6 +21,6 @@ function appInit(view) {
 
 var appPlay = config.controller.play.bind(config.controller);
 
-var app = { init: appInit.bind(config), play: appPlay };
+var ttt_service = { init: appInit.bind(config), play: appPlay };
 
-module.exports = app;
+module.exports = ttt_service;

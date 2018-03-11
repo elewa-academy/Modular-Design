@@ -19,3 +19,5 @@ controller.play = _play;
 
 
 module.exports = controller;
+
+// using this index would require you to modify the docs

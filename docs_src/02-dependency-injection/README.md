@@ -86,9 +86,12 @@ Try it out yourself.  Write the controller object and practice using it to write
 
 ## Specifications
 
-The finished product for this project will be a repo with several branches, one for each application you read and analyzed:
-* __master__: A README describing what you did and what you learned in this project.  It will contain links to each analysis branch on GitHub.
-* __other branches__:  The other branches will be named after the specific projects.  They will include:
+The finished product for this project will be a repo with 9 branches:
+* __master__: The main page describing what you did and what you learned in this project:  
+  * A good README
+    * Including links to the different branches for each app
+  * The complete app/component project you studied
+* __analysis branches__:  The other branches will be named after the specific folder you analyzed.  They will include:
   * A main README
     * About this code
     * Install instructions
@@ -98,10 +101,10 @@ The finished product for this project will be a repo with several branches, one 
       * Purpose, user stories, use cases
     * Use instructions
     * Sourcecode specs
-    * Link to build-time diagram (explained below)
+    * Link to build-time diagram
     * Run-time specs
-  * Source code 
-  * Build-time diagrams (one for each app)
+  * Just the source code necessary for this app (extra files deleted)
+  * Build-time diagram
 
 
 [TOP](#index)
@@ -124,6 +127,9 @@ Dependency Injection:
   * [Inversion of Control](https://www.youtube.com/watch?v=-kpEP4JeEdc) (Tricky)
 * [Fleeboy Article](https://medium.com/@fleeboy/dependency-injection-in-javascript-9db9ea6e4288)
 * [Krasimirtsonev](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript)
+
+Other Resources:
+* [Exporting & Requiring]()
 
 Challenge Articles:
 * [DI & Testing](https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be)

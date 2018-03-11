@@ -13,18 +13,6 @@ new series
 		george refactored
 		calcs (a few basics)
 		samples
-			app/component
-				calc
-					dom x console
-					sync
-				calc
-					terminal
-					P(+, -, /, *)
-				calc
-					dom
-					all operations
-					chaining vs not (last-result)
-						model with specs but doesn't do anything
 			inverted
 				tictactoe
 	async
@@ -32,18 +20,21 @@ new series
 			console
 			sync x async
 	crud
-		- browser
-		dom x console
-		model object w/ array
-	crud
-		- node terminal
-		- bound to directory location
-		model object w/ fs
+		- app/comp 
+		models
+			non-persistent
+				connect to html/css
+			persistent
+				read/write json
 	commander
+		- servicise the crud
 		- install -g
 		- can access same file from anywhere
+		a command line crud app
 	full editor
 		- can edit files where you are
+		now takes paths instead of id's 
+
 	awesome final project
 		auto-generate app/component directory structure
 		https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309

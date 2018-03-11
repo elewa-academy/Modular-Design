@@ -1,6 +1,6 @@
-# Project Title
+# Callbacks Diversion
 
-Description
+A short project introducing you to callbacks.
 
 ### Index
 * [Learning Objectives](#learning-objectives)
