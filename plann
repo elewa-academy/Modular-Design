@@ -2,6 +2,13 @@ new series
 	upjs
 	george mvc
 	mvclh
+		- basic unit tests for each
+		- repo with two template markdowns
+			master
+			project
+		- build-time diagram
+			for this project
+			for modules project too
 		- browser
 		george refactored
 		calcs (a few basics)
@@ -9,10 +16,21 @@ new series
 			app/component
 				calc
 					dom x console
-				mvc list
+					sync
+				calc
+					terminal
+					P(+, -, /, *)
+				calc
+					dom
+					all operations
+					chaining vs not (last-result)
+						model with specs but doesn't do anything
 			inverted
 				tictactoe
 	async
+		calc
+			console
+			sync x async
 	crud
 		- browser
 		dom x console

@@ -24,7 +24,7 @@ Learn about the MVC architecture by refactoring a single function into a full MV
 
 1. Follow the progressive [MVC Refactor Videos](https://www.youtube.com/watch?v=6iI7_EiuvkE), coding along with George.  As you follow along, build a branch/release repo like you did for Practical JavaScript in the last project.  
 2. Read & replicate the 3 Additional Codes To Study in the resource section.
-3. Do a final refactor of George's project following your imagination!  Make it prettier, add functionality, improve the application design, try out a new library, connect it to local storage ... Whatever you can dream of.  Make this the final version in your repo, host a demo, and attach the 
+3. Refactor the final version of Practical JavaScript into a full MVC application.  You will again need to do this on a separate branch and create a new release for this newest version.
 
 
 [TOP](#index)
