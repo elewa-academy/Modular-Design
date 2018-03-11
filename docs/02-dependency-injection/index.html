@@ -291,15 +291,15 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="dependency-injection">Dependency Injection</h1>
-<p>Model, View, Controller, Logic, Handler - a hyper-modular approach to application design.  By extending the MVC architecture to include separate code for the Logic and the Handlers you will have a (relatively) intuitive way to begin exploring modular application design.</p>
-<p>You&apos;ll see how to repackage the same core functionality for deployment in different environments, or how to easily swap out functionality in an application already built for one environment.  </p>
+<p>Model, View, Controller, Logic, Handler - a hyper-modular approach to application design. </p>
+<p>By extending the MVC architecture to include separate code for the Logic and the Handlers you will have a (relatively) intuitive way to begin exploring modular application design. You&apos;ll see how to repackage the same core functionality for deployment in different environments, or how to easily swap out functionality in an application already built for one environment.  </p>
 <p>You&apos;ll be reading, running, diagramming and documenting code.  No writing code this time.</p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#dependency-injection">Depednency Injection</a></li>
 <li><a href="#specifications">Specifications</a></li>
 <li><a href="#resources">Resources</a></li>
-<li><a href="#assessment">Assessment</a></li>
 </ul>
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
@@ -308,66 +308,107 @@
 <li>Dependency Injection</li>
 <li>App/Component Architecture</li>
 </ul>
-<h3 id="dependency-injection">Dependency Injection</h3>
-<p>As you&apos;ve already seen by using pseudocode and using specs to study source code, functionality and implementation are not the same thing.  This idea is central to Dependency Injection.</p>
-<p>Imagine a basic VC application with Controller &amp; View objects:</p>
-<ul>
-<li>View: Object<ul>
-<li>Methods: 1<ul>
-<li>render: Function<ul>
-<li>Args: 1<ul>
-<li>phrase: String</li>
-<li>Purpose: To be drawn onto the UI, for the user to see</li>
-</ul>
-</li>
-<li>Returns: undefined</li>
-<li>Behavior: Writes <em>phrase</em> into the UI</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Controller: Object<ul>
-<li>Methods: 1<ul>
-<li>show_this: Function<ul>
-<li>Args: 1<ul>
-<li>phrase: String</li>
-<li>Purpose: A string to be displayed to the user</li>
-</ul>
-</li>
-<li>Returns: undefined</li>
-<li>Behavior: Calls view.render() with <em>phrase</em> as an argument.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="dependency-injection">Dependency Injection</h2>
+<p>As you&apos;ve already seen by using pseudocode and using specs to study source code, functionality and implementation are not the same thing.  This idea is central to Dependency Injection, also known as &quot;developing to an interface&quot;.</p>
+<h3 id="a-thought-experiment">A Thought Experiment</h3>
+<p>Imagine a basic VC application with Controller &amp; View objects.  Notice that the <em>controller</em> object needs it&apos;s <em>view</em> object to have a function called <em>render</em> that takes in a String.  But it doesn&apos;t care what that function actually does! :</p>
+<pre><code>View: Object
+  METHODS: 1
+    render: Function
+      ARGS: 1
+        phrase: String
+        Purpose: To be drawn onto the UI, for the user to see
+      RETURNS: undefined
+      BEHAVIOR: Writes _phrase_ into the UI
+Controller: Object
+  PROPERTIEs: 1
+    view: A view object, as defined above
+        INITALIZED: empty
+  METHODS: 1
+    show_this: Function
+      ARGS: 1
+        phrase: String
+        Purpose: A string to be displayed to the user
+      RETURNS: undefined
+      BEHAVIOR: Calls this.view.render() with _phrase_ as an argument.
+</code></pre><p>Let&apos;s explore three different implementations of the <em>view</em> object:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> browser_view = {
+    render: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">phrase</span>) </span>{
+        <span class="hljs-keyword">let</span> text_box = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;text_box&apos;</span>);
+        text_box.innerHTML = phrase;
+    }
+};
+
+<span class="hljs-keyword">let</span> console_view = {
+    render: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">phrase</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(phrase);
+    }
+};
+
+<span class="hljs-keyword">let</span> bogus_view = {
+    render: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">phrase</span>) </span>{
+        <span class="hljs-keyword">this</span>.render(phrase);
+    };
+};
+</code></pre>
+<p>A <em>controller</em> object would just as happily use any 3 of these objects; all of them match the <em>view</em> specs.  They all have a method called &quot;render&quot; that takes in a String.   This is <strong>developing to an interface</strong>.  By simply changing which <em>view</em> object our <em>controller</em> has (ie. injecting a dependency), we can run our app in the browser, terminal, or callstack purgatory!</p>
+<p>Try it out yourself.  Write the controller object and practice using it to write to the DOM or the Console using the <em>view</em> objects provided.</p>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<p>project specifications overview</p>
-<p>link to more detailed specifications in repo if necessary</p>
+<p>The finished product for this project will be a repo with several branches, one for each application you read and analyzed:</p>
+<ul>
+<li><strong>master</strong>: A README describing what you did and what you learned in this project.  It will contain links to each analysis branch on GitHub.</li>
+<li><strong>other branches</strong>:  The other branches will be named after the specific projects.  They will include:<ul>
+<li>A main README<ul>
+<li>About this code</li>
+<li>Install instructions</li>
+<li>Ascii file structure</li>
+</ul>
+</li>
+<li>A markdown for each app<ul>
+<li>About application<ul>
+<li>Purpose, user stories, use cases</li>
+</ul>
+</li>
+<li>Use instructions</li>
+<li>Sourcecode specs</li>
+<li>Link to build-time diagram (explained below)</li>
+<li>Run-time specs</li>
+</ul>
+</li>
+<li>Source code </li>
+<li>Build-time diagrams (one for each app)</li>
+</ul>
+</li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p>overview</p>
-<h3 id="references">References</h3>
-<p>list of links to general-resources </p>
-<h3 id="exercises">Exercises</h3>
-<p>link to exercises that will practice new skills in this project, they will be stored in this project&apos;s folder in the repo</p>
-<h3 id="examples">Examples</h3>
-<p>link to example/s of this project in the repo.
-and to portfolios when they&apos;ve done the project</p>
-<h3 id="code-alongs">Code Alongs</h3>
-<p>link to code alongs that cover this project</p>
-<p><a href="#index">TOP</a></p>
-<hr>
-<h2 id="assessment">Assessment</h2>
-<p>links to google forms
-links to repo if there is a larger code-based assessment</p>
+<p>Example Analysis:</p>
+<ul>
+<li><a href="">MVC_list</a></li>
+</ul>
+<p>Projects to Analyze:</p>
+<p>Build-Time Diagrams:
+still deciding how these should be</p>
+<p>Dependency Injection:</p>
+<ul>
+<li>Funfunfunction:<ul>
+<li><a href="https://www.youtube.com/watch?v=0X1Ns2NRfks" target="_blank">Dependency Injection</a></li>
+<li><a href="https://www.youtube.com/watch?v=-kpEP4JeEdc" target="_blank">Inversion of Control</a> (Tricky)</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@fleeboy/dependency-injection-in-javascript-9db9ea6e4288" target="_blank">Fleeboy Article</a></li>
+<li><a href="http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript" target="_blank">Krasimirtsonev</a></li>
+</ul>
+<p>Challenge Articles:</p>
+<ul>
+<li><a href="https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be" target="_blank">DI &amp; Testing</a></li>
+<li><a href="http://blog.wolksoftware.com/the-current-state-of-dependency-inversion-in-javascript" target="_blank">Inversion of Control</a></li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <hr>
@@ -415,7 +456,7 @@ links to repo if there is a larger code-based assessment</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. Dependency Injection","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-dependency-injection/README.md","mtime":"2018-03-10T14:47:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-10T15:19:56.412Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3. Dependency Injection","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-dependency-injection/README.md","mtime":"2018-03-11T10:27:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-11T10:32:45.242Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
