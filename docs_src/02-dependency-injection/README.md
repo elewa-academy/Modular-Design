@@ -133,7 +133,6 @@ Dependency Injection:
 Other Resources:
 * [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/intro-to-modules)
 * [Visualizing Git Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
-* [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 * [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/0-most-basic)
 
 Challenge Articles:
