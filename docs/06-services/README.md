@@ -1,6 +1,6 @@
 # Project Title
 
-Description
+from app/components to services
 
 ### Index
 * [Learning Objectives](#learning-objectives)

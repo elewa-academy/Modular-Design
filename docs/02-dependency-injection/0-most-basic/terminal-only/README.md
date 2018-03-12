@@ -1,1 +1,1 @@
-The basic mvc-lh calcs from /0-basic-browser-only, but refactored to run in the terminal.
+The same core as ../browser-only but with the Handler and View replaced so it can run in the terminal.

@@ -1,1 +1,1 @@
-A simple example of mvc-lh
+A simple example of app/component architecture.
