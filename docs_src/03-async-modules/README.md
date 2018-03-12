@@ -35,6 +35,8 @@ link to more detailed specifications in repo if necessary
 
 ## Resources
 
+* [Async Programming](https://elewa-academy.github.io/General-Resources/javascript/async.html)
+* [On Callbacks](https://elewa-academy.github.io/General-Resources/javascript/async-callbacks.html)
 callback examples
 
 [TOP](#index)
