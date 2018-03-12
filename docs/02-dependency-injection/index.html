@@ -304,9 +304,11 @@
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>MVC-LH</li>
 <li>Dependency Injection</li>
 <li>App/Component Architecture</li>
+<li>Source code vs. Build-time vs. Run-time</li>
+<li>Core app vs environment</li>
+<li>Reading &amp; analyzing modular projects</li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
@@ -359,61 +361,52 @@ Controller: Object
 <hr>
 <h2 id="specifications">Specifications</h2>
 <p>No programming here.  You&apos;ll be reading and analyzing the code provided in <a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture" target="_blank">this project&apos;s repo</a>.  The app/component architecture is a way of organizing code that lets you mix &amp; match functionalities, making it easy to adapt your applications for different environments and use cases.</p>
-<p>There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  Your branching structure will look like <a href="https://stackoverflow.com/questions/3666953/showing-git-branch-structure" target="_blank">look like this</a> </p>
-<p>The finished product for this project will be a repo with 9 branches:</p>
+<p>There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  </p>
+<p>The finished product for this project will be a repo with 3 branches:</p>
 <ol>
-<li>A master branch with a README that explains this project and links to the other branches.</li>
-<li>8 &quot;app&quot; branches</li>
-</ol>
-<ul>
-<li><strong>master</strong>: The main page describing what you did and what you learned in this project:  <ul>
-<li>A good README<ul>
-<li>Including links to the different branches for each app</li>
+<li>A master branch with:<ul>
+<li>README: Project overview, links to branches, notes</li>
 </ul>
 </li>
-<li>The complete app/component project you studied</li>
-</ul>
-</li>
-<li><strong>analysis branches</strong>:  The other branches will be named after the specific folder you analyzed.  They will include:<ul>
+<li>2 code branches - dom-console-node &amp; mix-match-operations. Each will contain:<ul>
 <li>A main README<ul>
 <li>About this code</li>
+<li>Links to this branch&apos;s app files</li>
 <li>Install instructions</li>
 <li>Ascii file structure</li>
+<li>Notes</li>
 </ul>
 </li>
 <li>A markdown for each app<ul>
-<li>About application<ul>
+<li>About the app<ul>
 <li>Purpose, user stories, use cases</li>
 </ul>
 </li>
 <li>Use instructions</li>
 <li>Sourcecode specs</li>
-<li>Link to build-time diagram</li>
+<li>Build-time diagram</li>
 <li>Run-time specs</li>
 </ul>
 </li>
-<li>Just the source code necessary for this app (extra files deleted)</li>
-<li>Build-time diagram</li>
+<li>The source code</li>
 </ul>
 </li>
-</ul>
+</ol>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
 <p>Project resources:</p>
 <ul>
-<li><a href="">MVC_list Demo</a></li>
-<li><a href="">Branching Template</a></li>
-<li><a href="https://stackoverflow.com/questions/3666953/showing-git-branch-structure" target="_blank">Visualizing Branches</a></li>
+<li><a href="https://github.com/elewa-student/Analyzing-Architecture/tree/master" target="_blank">MVC_list Demo</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture" target="_blank">Code to Analyze</a> </li>
 </ul>
-<p>Code to Analyze:</p>
 <p>Build-Time Diagrams:
 still deciding how these should be</p>
 <p>Dependency Injection:</p>
 <ul>
 <li>Funfunfunction:<ul>
 <li><a href="https://www.youtube.com/watch?v=0X1Ns2NRfks" target="_blank">Dependency Injection</a></li>
-<li><a href="https://www.youtube.com/watch?v=-kpEP4JeEdc" target="_blank">Inversion of Control</a> (Tricky)</li>
+<li><a href="https://www.youtube.com/watch?v=-kpEP4JeEdc" target="_blank">Inversion of Control</a> (Trickier)</li>
 </ul>
 </li>
 <li><a href="https://medium.com/@fleeboy/dependency-injection-in-javascript-9db9ea6e4288" target="_blank">Fleeboy Article</a></li>
@@ -421,7 +414,10 @@ still deciding how these should be</p>
 </ul>
 <p>Other Resources:</p>
 <ul>
-<li><a href="">Exporting &amp; Requiring</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/intro-to-modules" target="_blank">Exporting &amp; Requiring</a></li>
+<li><a href="https://stackoverflow.com/questions/3666953/showing-git-branch-structure" target="_blank">Visualizing Git Branches</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank">Git Submodules</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/0-most-basic" target="_blank">Simpler Code to Practice Reading</a></li>
 </ul>
 <p>Challenge Articles:</p>
 <ul>
@@ -475,7 +471,7 @@ still deciding how these should be</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. Dependency Injection","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-dependency-injection/README.md","mtime":"2018-03-12T10:40:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-12T10:41:21.531Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3. Dependency Injection","level":"1.4","depth":1,"next":{"title":"4. Callbacks","level":"1.5","depth":1,"path":"03-callbacks/README.md","ref":"03-callbacks/README.md","articles":[]},"previous":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-dependency-injection/README.md","mtime":"2018-03-12T11:21:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-12T11:21:44.280Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
