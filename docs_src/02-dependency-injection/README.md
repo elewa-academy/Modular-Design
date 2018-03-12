@@ -17,10 +17,11 @@ You'll be reading, running, diagramming and documenting code.  No writing code t
 
 ## Learning Objectives
 
-
-* MVC-LH
 * Dependency Injection
 * App/Component Architecture
+* Source code vs. Build-time vs. Run-time
+* Core app vs environment
+* Reading & analyzing modular projects
 
 [TOP](#index)
 
@@ -88,31 +89,27 @@ Try it out yourself.  Write the controller object and practice using it to write
 
 No programming here.  You'll be reading and analyzing the code provided in [this project's repo](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture).  The app/component architecture is a way of organizing code that lets you mix & match functionalities, making it easy to adapt your applications for different environments and use cases.
 
-There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  Your branching structure will look like [look like this](https://stackoverflow.com/questions/3666953/showing-git-branch-structure) 
+There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  
 
-The finished product for this project will be a repo with 9 branches:
-1. A master branch with a README that explains this project and links to the other branches.
-2. 8 "app" branches
-
-
-* __master__: The main page describing what you did and what you learned in this project:  
-  * A good README
-    * Including links to the different branches for each app
-  * The complete app/component project you studied
-* __analysis branches__:  The other branches will be named after the specific folder you analyzed.  They will include:
+The finished product for this project will be a repo with 3 branches:
+1. A master branch with:
+  * README: Project overview, links to branches, notes
+2. 2 code branches - dom-console-node & mix-match-operations. Each will contain:
   * A main README
     * About this code
+    * Links to this branch's app files
     * Install instructions
     * Ascii file structure
+    * Notes
   * A markdown for each app
-    * About application
+    * About the app
       * Purpose, user stories, use cases
     * Use instructions
     * Sourcecode specs
-    * Link to build-time diagram
+    * Build-time diagram
     * Run-time specs
-  * Just the source code necessary for this app (extra files deleted)
-  * Build-time diagram
+  * The source code
+
 
 
 [TOP](#index)
@@ -122,11 +119,9 @@ The finished product for this project will be a repo with 9 branches:
 ## Resources
 
 Project resources:
-* [MVC_list Demo]()
-* [Branching Template]()
-* [Visualizing Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
+* [MVC_list Demo](https://github.com/elewa-student/Analyzing-Architecture/tree/master)
+* [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture) 
 
-Code to Analyze:
 
 Build-Time Diagrams:
 still deciding how these should be
@@ -134,18 +129,22 @@ still deciding how these should be
 Dependency Injection:
 * Funfunfunction:
   * [Dependency Injection](https://www.youtube.com/watch?v=0X1Ns2NRfks)
-  * [Inversion of Control](https://www.youtube.com/watch?v=-kpEP4JeEdc) (Tricky)
+  * [Inversion of Control](https://www.youtube.com/watch?v=-kpEP4JeEdc) (Trickier)
 * [Fleeboy Article](https://medium.com/@fleeboy/dependency-injection-in-javascript-9db9ea6e4288)
 * [Krasimirtsonev](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript)
 
 Other Resources:
-* [Exporting & Requiring]()
+* [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/intro-to-modules)
+* [Visualizing Git Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
+* [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+* [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/0-most-basic)
 
 Challenge Articles:
 * [DI & Testing](https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be)
 * [Inversion of Control](http://blog.wolksoftware.com/the-current-state-of-dependency-inversion-in-javascript)
 
 [TOP](#index)
+
 
 
 ___
