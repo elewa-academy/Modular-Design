@@ -24,9 +24,15 @@ list
 
 ## Specifications
 
-project specifications overview
 
-link to more detailed specifications in repo if necessary
+Refactor your MVC version of Practical JavaScript to have async components.  As before you will refactor on a new branch.
+
+Your finished project consist of:
+* A new branch and release in your PJS repo
+* Updated README 
+* Updated gh-pages demo
+* A diagram to explain how your async Todo app works.  This can be structured however you like.
+
 
 
 [TOP](#index)
@@ -35,9 +41,14 @@ link to more detailed specifications in repo if necessary
 
 ## Resources
 
+Callbacks:
+* [Video & Visualization Tool](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 * [Async Programming](https://elewa-academy.github.io/General-Resources/javascript/async.html)
 * [On Callbacks](https://elewa-academy.github.io/General-Resources/javascript/async-callbacks.html)
-callback examples
+* [Progressive Examples](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/03-async-modules/callbacks)
+* [Code to Study]()
+
+
 
 [TOP](#index)
 
