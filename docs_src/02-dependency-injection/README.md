@@ -106,7 +106,7 @@ The finished product for this project will be a repo with 3 branches:
       * Purpose, user stories, use cases
     * Use instructions
     * Sourcecode specs
-    * Build-time diagram
+    * Build-time diagram (see the demo)
     * Run-time specs
   * The source code
 
@@ -122,9 +122,6 @@ Project resources:
 * [MVC_list Demo](https://github.com/elewa-student/Analyzing-Architecture/tree/master)
 * [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture) 
 
-
-Build-Time Diagrams:
-still deciding how these should be
 
 Dependency Injection:
 * Funfunfunction:
