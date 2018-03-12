@@ -1,6 +1,6 @@
 # Project Title
 
-Description
+basic crud command line application, full model object
 
 ### Index
 * [Learning Objectives](#learning-objectives)

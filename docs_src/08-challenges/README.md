@@ -1,6 +1,8 @@
 # Project Title
 
-Description
+cli text editor
+or
+project generator
 
 ### Index
 * [Learning Objectives](#learning-objectives)

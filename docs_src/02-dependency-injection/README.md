@@ -86,7 +86,15 @@ Try it out yourself.  Write the controller object and practice using it to write
 
 ## Specifications
 
+No programming here.  You'll be reading and analyzing the code provided in [this project's repo](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture).  The app/component architecture is a way of organizing code that lets you mix & match functionalities, making it easy to adapt your applications for different environments and use cases.
+
+There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  Your branching structure will look like [look like this](https://stackoverflow.com/questions/3666953/showing-git-branch-structure) 
+
 The finished product for this project will be a repo with 9 branches:
+1. A master branch with a README that explains this project and links to the other branches.
+2. 8 "app" branches
+
+
 * __master__: The main page describing what you did and what you learned in this project:  
   * A good README
     * Including links to the different branches for each app
@@ -113,10 +121,12 @@ The finished product for this project will be a repo with 9 branches:
 
 ## Resources
 
-Example Analysis:
-* [MVC_list]()
+Project resources:
+* [MVC_list Demo]()
+* [Branching Template]()
+* [Visualizing Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
 
-Projects to Analyze:
+Code to Analyze:
 
 Build-Time Diagrams:
 still deciding how these should be
