@@ -1,6 +1,6 @@
-# Callbacks Diversion
+# Async Modules
 
-A short project introducing you to callbacks.
+Let's learn a little about async programming 
 
 ### Index
 * [Learning Objectives](#learning-objectives)
@@ -9,6 +9,8 @@ A short project introducing you to callbacks.
 * [Assessment](#assessment)
 
 ---
+
+
 
 ## Learning Objectives
 
@@ -33,37 +35,11 @@ link to more detailed specifications in repo if necessary
 
 ## Resources
 
-overview
-
-### References
-
-list of links to general-resources 
-
-### Exercises
-
-
-link to exercises that will practice new skills in this project, they will be stored in this project's folder in the repo
-
-###  Examples
-
-link to example/s of this project in the repo.
-and to portfolios when they've done the project
-
-### Code Alongs
-
-link to code alongs that cover this project
-
+callback examples
 
 [TOP](#index)
 
----
 
-## Assessment
-
-links to google forms
-links to repo if there is a larger code-based assessment
-
-[TOP](#index)
 
 ___
 ___
