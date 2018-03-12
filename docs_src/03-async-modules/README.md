@@ -46,7 +46,7 @@ Callbacks:
 * [Async Programming](https://elewa-academy.github.io/General-Resources/javascript/async.html)
 * [On Callbacks](https://elewa-academy.github.io/General-Resources/javascript/async-callbacks.html)
 * [Progressive Examples](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/03-async-modules/callbacks)
-* [Code to Study]()
+* [Code to Study](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/03-async-modules/sync-vs-async)
 
 
 
