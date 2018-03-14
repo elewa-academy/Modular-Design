@@ -2,7 +2,9 @@
 
 Create, Read, Update, Delete.
 
-These are the basic Data Access operations.  In this project you will build a basic command line application (CLI) that allows you to take notes directly from the command line
+These are the basic Data Access operations.  In this project you will build a basic command line application (CLI) that allows you to take read and write notes directly from the command line into a .json file.
+
+Along the way you'll learn about Model Objects and File IO (one of Node's 3 super-powers).
 
 ### Index
 * [Learning Objectives](#learning-objectives)
@@ -27,38 +29,28 @@ These are the basic Data Access operations.  In this project you will build a ba
 ## Specifications
 
 
-1. impersisitent model object
-	complete these incomplete data models:
-		basic-sync-model-object.js
-		basic-sync-model-array.js
-		basic-asycn-model.js
-	and tests for them 
-2. persistent model object
-	user stories
-		c
-		r_one
-		r_all
-		u
-		d
-		initialize
-			catches if file exists
-		reinitialize
-			prompts user before completing
-	h & v
-	- provided
-		procedural file, not imported objects
-	http://stackabuse.com/reading-and-writing-json-files-with-node-js/
-	https://www.codementor.io/codementorteam/how-to-use-json-files-in-node-js-85hndqt32
-	https://github.com/jprichardson/node-jsonfile
-	two versions
-		json file
-			sync - provided.  why does the test sequence in the file not work?
-			async - how does asyncing fix this problem?
-3. appize it
-	more substantial h & v
-	helpful error message
-4. challenge
-	nested notes
+1. For each _basic model_ file in this [demo app](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/05-crud/crud-app):
+    * Write the model object
+    * Test the model object in your /tests folder
+
+2. For each _json model_ file:
+    * Write the model object
+      * User Stories:
+        * Create
+        * Read
+        * Update
+        * Delete
+        * Initialize (creates .json file with empty DB object)
+        * Reset (clears nextID & data)
+        * Set name of DB
+        * See a helpful message or error after each operation
+    * Test the model objecti in your /tests folder
+3. Write a Node.js Handler & View.  No need for a Logic or Controller	
+4. Build a repo for this project and include it on your portfolio.
+
+
+Challenge:
+* Allow a user to CRUD nested notes
 
 
 
@@ -68,35 +60,14 @@ These are the basic Data Access operations.  In this project you will build a ba
 
 ## Resources
 
-overview
+File I/O in Node:
+* [Stackabuse](http://stackabuse.com/reading-and-writing-json-files-with-node-js/)
+* [Codementor](https://www.codementor.io/codementorteam/how-to-use-json-files-in-node-js-85hndqt32)
+* [node-jsonfile](https://github.com/jprichardson/node-jsonfile)
 
-### References
-
-list of links to general-resources 
-
-### Exercises
-
-
-link to exercises that will practice new skills in this project, they will be stored in this project's folder in the repo
-
-###  Examples
-
-link to example/s of this project in the repo.
-and to portfolios when they've done the project
-
-### Code Alongs
-
-link to code alongs that cover this project
-
-
-[TOP](#index)
-
----
-
-## Assessment
-
-links to google forms
-links to repo if there is a larger code-based assessment
+Error Handling with Callbacks:
+* [Error First Convention](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
+* [By Example](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/03-async-modules/sync-vs-async)
 
 [TOP](#index)
 

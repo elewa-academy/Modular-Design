@@ -30,7 +30,6 @@ This means that the tests you write and publish along with your code are the ult
 * Coming up with Test Cases
 * Integrating tests into a codebase
 * Using test cases to explain yourself
-* Code Coverage
 * Object State
 
 ### State
@@ -79,20 +78,17 @@ Testing:
 * [Mocks, Stubs & Spies](https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/)
 
 Tools:
-* [Istanbul.js](https://github.com/gotwarlost/istanbul)
 * [Tressa in a NutShell](https://gist.github.com/WebReflection/00531a64bb7b846c9b78e059fc0441ff)
 * [Tressa.js](https://github.com/WebReflection/tressa#tressa-%20%20jstinytest)
 
 
 Code to Study:
-* sync-async working on
-* https://github.com/WebReflection/vanilla-code-coverage
-* old testing library
+* [Last project with tests](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/sync-async-tested)
+* [Minimal Testing Libraries](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/minimal-testing-libraries)
 
 
 Challenges:
-* [Testing Async Units](https://martinfowler.com/articles/asyncJS.html)
-* [Promises](m)
+* [Async Unit Tests](https://martinfowler.com/articles/asyncJS.html)
 
 
 
