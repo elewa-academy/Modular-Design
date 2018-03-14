@@ -1,4 +1,4 @@
-var app = require('../tictactoe/index');
+var app = require('../tictactoe-service');
 var view = require('./view');
 
 app.init(view);

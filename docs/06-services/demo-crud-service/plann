@@ -1,0 +1,8 @@
+files
+	no logic (?)
+	model object
+	index.js
+		requires model
+	init method
+		creates file not in service, in directory at same level as service
+		

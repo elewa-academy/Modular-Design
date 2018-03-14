@@ -193,12 +193,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../07-commander-js/">
+        <li class="chapter " data-level="1.9" data-path="../07-clis/">
             
-                <a href="../07-commander-js/">
+                <a href="../07-clis/">
             
                     
-                    8. Commander.js
+                    8. CLI's
             
                 </a>
             
@@ -206,12 +206,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../08-challenges/">
+        <li class="chapter " data-level="1.10" data-path="../08-apis/">
             
-                <a href="../08-challenges/">
+                <a href="../08-apis/">
             
                     
-                    9. Challenges
+                    9. API's
             
                 </a>
             
@@ -291,9 +291,17 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="testing-modules">Testing Modules</h1>
-<p>sync, async
-<a href="https://github.com/WebReflection/tressa#tressa-%20%20jstinytest" target="_blank">https://github.com/WebReflection/tressa#tressa-%20%20jstinytest</a>
-<a href="https://zserge.com/blog/minimal-testing.html" target="_blank">https://zserge.com/blog/minimal-testing.html</a></p>
+<p>Writing tests for your code is one of the most important steps in the development process.  Good tests will help with documenting your code, QA, refactoring, maintenance, and everything in between.  </p>
+<p>Everyone agrees that tests are important, but people argue to the ends of the internet about how to fit tests into the development process. Do you write them first? Do you test your code every couple minutes? Do you pass your code off to testers after writing it?  In this project you won&apos;t worry about any of that, the focus here is to get used to writing and reading tests.  </p>
+<p>So far in with these projects we&apos;ve talked about specs (args, return, behavior) as the measure of code - any code matching the same specs is interchangeable.  In this project you will take this idea to the next level:</p>
+<blockquote>
+<p>The tests define the module</p>
+</blockquote>
+<p>This means that the tests you write and publish along with your code are the ultimate guide to your project.  </p>
+<ul>
+<li>Anyone should be able to read your test files and understand what your project does.</li>
+<li>Any code that passes your tests should be able to replace your module in an application.</li>
+</ul>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
@@ -302,27 +310,75 @@
 </ul>
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
-<p>overview</p>
-<p>list</p>
+<ul>
+<li>Tests define and document your modules</li>
+<li>Testing modular code</li>
+<li>Coming up with Test Cases</li>
+<li>Integrating tests into a codebase</li>
+<li>Using test cases to explain yourself</li>
+<li>Code Coverage</li>
+<li>Object State</li>
+</ul>
+<h3 id="state">State</h3>
+<p>This is a concept that will come up again later when you learn about Functional Programming, and again when you learn React.  For now we&apos;ll stick to a very basic definition:</p>
+<ul>
+<li>State is any property in an object.</li>
+</ul>
+<p>Pretty simple as far as concepts go, but it becomes complicated in practice when objects are changing their values all the time.  As you move through your developer journey you will probably come to appreciate the simplicity that comes with <em>stateless</em> design.  The simplest instance of <em>stateful</em> vs <em>stateless</em> design is objects vs pure functions. </p>
+<p>In this project you&apos;ll experience first-hand one of the realms where stateful objects are more difficult to deal with than pure functions:  Testing. </p>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<ol>
-<li>Refactory jstinytest to work in the terminal</li>
-</ol>
+<p>Use Tressa.js &amp; Istabul to write tests for you PJS Todo List.  You will be expected to write tests for both the Synchronous and Asynchronous versions of your application.  These tests will be added to their respective branches.  ie. The async tests will be added to the async branch, the synchronous tests will be added to the most recent syncronous branch. </p>
+<p>The finished project will be a new release with:</p>
+<ul>
+<li>Sync source code &amp; tests in one folder<ul>
+<li>A new section in the README: Code coverage &amp; % Passing tests</li>
+</ul>
+</li>
+<li>Async source code &amp; tests in another folder<ul>
+<li>A new section in the README: Code coverage &amp; % Passing tests</li>
+</ul>
+</li>
+<li>An updated README<ul>
+<li>Include instructions for running the tests</li>
+<li>Updated Notes section</li>
+<li>Anything else you&apos;d like to put in there</li>
+</ul>
+</li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p>overview</p>
-<h3 id="references">References</h3>
-<p>list of links to general-resources </p>
-<h3 id="exercises">Exercises</h3>
-<p>link to exercises that will practice new skills in this project, they will be stored in this project&apos;s folder in the repo</p>
-<h3 id="examples">Examples</h3>
-<p>link to example/s of this project in the repo.
-and to portfolios when they&apos;ve done the project</p>
-<h3 id="code-alongs">Code Alongs</h3>
-<p>link to code alongs that cover this project</p>
+<p>Assert:</p>
+<ul>
+<li><a href="https://nodejs.org/api/assert.html" target="_blank">In Node</a></li>
+<li><a href="https://www.w3schools.com/nodejs/ref_assert.asp" target="_blank">W3Schools</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert" target="_blank">In the Browser</a></li>
+</ul>
+<p>Testing:</p>
+<ul>
+<li><a href="https://medium.com/@WebReflection/js-vanilla-test-code-coverage-7b7ba3740776" target="_blank">Pt. 1 - Code Coverage</a></li>
+<li><a href="https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121" target="_blank">Pt. 2 - Tressa</a></li>
+<li><a href="https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/" target="_blank">Mocks, Stubs &amp; Spies</a></li>
+</ul>
+<p>Tools:</p>
+<ul>
+<li><a href="https://github.com/gotwarlost/istanbul" target="_blank">Istanbul.js</a></li>
+<li><a href="https://gist.github.com/WebReflection/00531a64bb7b846c9b78e059fc0441ff" target="_blank">Tressa in a NutShell</a></li>
+<li><a href="https://github.com/WebReflection/tressa#tressa-%20%20jstinytest" target="_blank">Tressa.js</a></li>
+</ul>
+<p>Code to Study:</p>
+<ul>
+<li>sync-async working on</li>
+<li><a href="https://github.com/WebReflection/vanilla-code-coverage" target="_blank">https://github.com/WebReflection/vanilla-code-coverage</a></li>
+<li>old testing library</li>
+</ul>
+<p>Challenges:</p>
+<ul>
+<li><a href="https://martinfowler.com/articles/asyncJS.html" target="_blank">Testing Async Units</a></li>
+<li><a href="m">Promises</a></li>
+</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="assessment">Assessment</h2>
@@ -375,7 +431,7 @@ links to repo if there is a larger code-based assessment</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5. Testing Modules","level":"1.6","depth":1,"next":{"title":"6. CRUD","level":"1.7","depth":1,"path":"05-crud/README.md","ref":"05-crud/README.md","articles":[]},"previous":{"title":"4. Async Modules","level":"1.5","depth":1,"path":"03-async-modules/README.md","ref":"03-async-modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04-testing-modules/README.md","mtime":"2018-03-12T12:07:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-12T13:05:11.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5. Testing Modules","level":"1.6","depth":1,"next":{"title":"6. CRUD","level":"1.7","depth":1,"path":"05-crud/README.md","ref":"05-crud/README.md","articles":[]},"previous":{"title":"4. Async Modules","level":"1.5","depth":1,"path":"03-async-modules/README.md","ref":"03-async-modules/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04-testing-modules/README.md","mtime":"2018-03-12T18:11:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-14T18:37:30.357Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
