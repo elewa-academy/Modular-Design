@@ -1,6 +1,8 @@
-# Project Title
+# CRUD
 
-basic crud command line application, full model object
+Create, Read, Update, Delete.
+
+These are the basic Data Access operations.  In this project you will build a basic command line application (CLI) that allows you to take notes directly from the command line
 
 ### Index
 * [Learning Objectives](#learning-objectives)
@@ -12,9 +14,11 @@ basic crud command line application, full model object
 
 ## Learning Objectives
 
-overview
-
-list
+* JSON
+* Reading & Writing to files
+* Model objects
+* CRUD operations
+* CLI's
 
 [TOP](#index)
 
@@ -22,9 +26,40 @@ list
 
 ## Specifications
 
-project specifications overview
 
-link to more detailed specifications in repo if necessary
+1. impersisitent model object
+	complete these incomplete data models:
+		basic-sync-model-object.js
+		basic-sync-model-array.js
+		basic-asycn-model.js
+	and tests for them 
+2. persistent model object
+	user stories
+		c
+		r_one
+		r_all
+		u
+		d
+		initialize
+			catches if file exists
+		reinitialize
+			prompts user before completing
+	h & v
+	- provided
+		procedural file, not imported objects
+	http://stackabuse.com/reading-and-writing-json-files-with-node-js/
+	https://www.codementor.io/codementorteam/how-to-use-json-files-in-node-js-85hndqt32
+	https://github.com/jprichardson/node-jsonfile
+	two versions
+		json file
+			sync - provided.  why does the test sequence in the file not work?
+			async - how does asyncing fix this problem?
+3. appize it
+	more substantial h & v
+	helpful error message
+4. challenge
+	nested notes
+
 
 
 [TOP](#index)

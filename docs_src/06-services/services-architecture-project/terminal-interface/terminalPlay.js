@@ -1,4 +1,6 @@
-var controller = require('../app');
+// notice there was no need to specify a file in this folder
+//		node automatically exports "index.js" unless you specify otherwise
+var controller = require('../tictactoe-service');
 var view = require('./view');
 
 controller.view.buildBoard();

@@ -1,3 +1,15 @@
+In this series of projects you will learn 
+* Separation of Concerns
+* to build small, single responsibility modules
+* to assemble these modules into applications
+* asynchronous programming with callbacks
+* testing modules
+* packaging modules into services
+* CRUD applications
+* to build a CLI around a CRUD service
+* to build an API around a CRUD service
+
+
 Here you'll apply Separation of Concerns to application design.  by the end of this series of projects you'll understand how to build applications out of small, reusable modules. As usual you'll make a gallery page for this series of projects, by the end it will have these things:
 * PJS repo
 * mvc repo for george's project

@@ -106,10 +106,15 @@ The finished product for this project will be a repo with 3 branches:
       * Purpose, user stories, use cases
     * Use instructions
     * Sourcecode specs
-    * Build-time diagram (see the demo)
+    * Build-time diagram 
     * Run-time specs
   * The source code
 
+### Build-Time Diagram
+
+The build-time diagram is a way for you to explore how applications are dynamically assembled and built when you run them.  Understanding this is key to understanding source code, designing applications, and even debugging!  If you have difficulty mapping between source code and runtime code even the most basic runtime error can be indecipherable.
+
+You can see an example [here](https://github.com/elewa-student/Analyzing-Architecture/tree/master).
 
 
 [TOP](#index)

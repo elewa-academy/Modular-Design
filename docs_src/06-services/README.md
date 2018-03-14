@@ -1,12 +1,11 @@
-# Project Title
+# Service-Based Application Design
 
-from app/components to services
+refactor the last application into service-based architecture
 
 ### Index
 * [Learning Objectives](#learning-objectives)
 * [Specifications](#specifications)
 * [Resources](#resources)
-* [Assessment](#assessment)
 
 ---
 
@@ -22,9 +21,25 @@ list
 
 ## Specifications
 
-project specifications overview
-
-link to more detailed specifications in repo if necessary
+1. convert the last project into a MCL note-taking service
+	- this service allows users to take notes in a json file from wherever the 
+	- everything must be exported through index.js - for easy use
+		$ ./notes create favorite_sandwitch turkey_lettuce
+		project
+			/notes
+			notes.json
+	service is installed. They can:
+		add key-value (title, content) pairs to a json file
+		read a single not
+		read all notes
+		update a note
+		remove a note
+		view all possible commands & the arguments they take
+		get a meaningful message or error after each command executed
+		initialize a new notes file in a new directory
+		reinitialize notes.json
+		delete the notes file
+2. challenge: nested notes
 
 
 [TOP](#index)
@@ -33,35 +48,9 @@ link to more detailed specifications in repo if necessary
 
 ## Resources
 
-overview
-
-### References
-
-list of links to general-resources 
-
-### Exercises
+reading/writing/creating/deleting files in node
 
 
-link to exercises that will practice new skills in this project, they will be stored in this project's folder in the repo
-
-###  Examples
-
-link to example/s of this project in the repo.
-and to portfolios when they've done the project
-
-### Code Alongs
-
-link to code alongs that cover this project
-
-
-[TOP](#index)
-
----
-
-## Assessment
-
-links to google forms
-links to repo if there is a larger code-based assessment
 
 [TOP](#index)
 

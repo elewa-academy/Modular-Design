@@ -1,6 +1,6 @@
 # Async Modules
 
-Let's learn a little about async programming 
+Let's learn a little about async programming.  In this project you will refactor your Todo List from Practical JavaScript into an Asynchronous application.
 
 ### Index
 * [Learning Objectives](#learning-objectives)
@@ -11,12 +11,10 @@ Let's learn a little about async programming
 ---
 
 
-
 ## Learning Objectives
 
-overview
-
-list
+* Async programming
+* Callbacks
 
 [TOP](#index)
 
