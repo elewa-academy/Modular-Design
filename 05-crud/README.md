@@ -19,6 +19,7 @@ Along the way you'll learn about Model Objects and File IO (one of Node's 3 supe
 * JSON
 * Reading & Writing to files
 * Model objects
+* Closures
 * CRUD operations
 * CLI's
 
@@ -68,6 +69,10 @@ File I/O in Node:
 Error Handling with Callbacks:
 * [Error First Convention](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
 * [By Example](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/03-async-modules/sync-vs-async)
+
+Closures:
+* [General Resources](https://elewa-academy.github.io/General-Resources/javascript/closures.html)
+
 
 [TOP](#index)
 

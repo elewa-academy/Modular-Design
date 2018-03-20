@@ -61,6 +61,7 @@ The finished project will be a new release with:
   * Anything else you'd like to put in there
 
 
+
 [TOP](#index)
 
 ---
@@ -85,7 +86,9 @@ Tools:
 Code to Study:
 * [Last project with tests](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/sync-async-tested)
 * [Minimal Testing Libraries](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/minimal-testing-libraries)
-
+* [Proclaim.js](https://github.com/rowanmanning/proclaim)
+* [jsTinyTest](https://github.com/bennadel/TinyTestJS)
+* [Klud](https://bitbucket.org/zserge/klud.js/)
 
 Challenges:
 * [Async Unit Tests](https://martinfowler.com/articles/asyncJS.html)

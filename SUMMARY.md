@@ -10,5 +10,5 @@
 * [7. Services](06-services/README.md)
 * [8. CLI's](07-clis/README.md)
 * [9. API's](08-apis/README.md)
-* [Repo](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src)
+* [Repo](https://github.com/elewa-academy/Modular-Design/tree/master/)
 * [Home](https://elewa-academy.github.io)

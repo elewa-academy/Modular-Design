@@ -2,6 +2,7 @@
 
 take the project from last time and give it a commander.js handler & view
 
+
 ### Index
 * [Learning Objectives](#learning-objectives)
 * [Specifications](#specifications)
@@ -49,6 +50,8 @@ commander
 	nah bad
 		https://medium.freecodecamp.org/writing-command-line-applications-in-nodejs-2cf8327eee2
 			code samples don't work
+
+http://cruft.io/posts/node-command-line-utilities/ - do this one
 
 https://en.wikipedia.org/wiki/Usage_message
 
