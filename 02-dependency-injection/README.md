@@ -87,7 +87,7 @@ Try it out yourself.  Write the controller object and practice using it to write
 
 ## Specifications
 
-No programming here.  You'll be reading and analyzing the code provided in [this project's repo](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture).  The app/component architecture is a way of organizing code that lets you mix & match functionalities, making it easy to adapt your applications for different environments and use cases.
+No programming here.  You'll be reading and analyzing the code provided in [this project's repo](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection).  The App/Component architecture is a way of organizing code that lets you mix & match functionalities, making it easy to adapt your applications for different environments and use cases.
 
 There are 8 total applications built from reusable components.  Each application is significantly different in some little way, though they all use mostly the same source code.  Your task is to run, analyze, and document each separate application.  Your finished project will be a repository organized with branches.  Each branch will analyze a singe application.  
 
@@ -110,6 +110,8 @@ The finished product for this project will be a repo with 3 branches:
     * Run-time specs
   * The source code
 
+([Example structure here](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/project-branch-structure))
+
 ### Build-Time Diagram
 
 The build-time diagram is a way for you to explore how applications are dynamically assembled and built when you run them.  Understanding this is key to understanding source code, designing applications, and even debugging!  If you have difficulty mapping between source code and runtime code even the most basic runtime error can be indecipherable.
@@ -125,7 +127,7 @@ You can see an example [here](https://github.com/elewa-student/Analyzing-Archite
 
 Project resources:
 * [MVC_list Demo](https://github.com/elewa-student/Analyzing-Architecture/tree/master)
-* [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/1-app-components-architecture) 
+* [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/1-app-components-architecture) 
 
 
 Dependency Injection:
@@ -136,9 +138,9 @@ Dependency Injection:
 * [Krasimirtsonev](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript)
 
 Other Resources:
-* [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/intro-to-modules)
+* [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/intro-to-modules)
 * [Visualizing Git Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
-* [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/02-dependency-injection/0-most-basic)
+* [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/0-most-basic)
 
 Challenge Articles:
 * [DI & Testing](https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be)

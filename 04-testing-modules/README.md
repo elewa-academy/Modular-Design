@@ -72,10 +72,12 @@ Assert:
 * [In Node](https://nodejs.org/api/assert.html)
 * [W3Schools](https://www.w3schools.com/nodejs/ref_assert.asp)
 * [In the Browser](https://developer.mozilla.org/en-US/docs/Web/API/console/assert)
+* [In the Terminal](https://github.com/rowanmanning/proclaim)
 
 Testing:
 * [Pt. 1 - Code Coverage](https://medium.com/@WebReflection/js-vanilla-test-code-coverage-7b7ba3740776)
 * [Pt. 2 - Tressa](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121)
+* [Pure Functions, Easy Testing](https://github.com/foundersandcoders/ws-pure-functions-easy-testing)
 * [Mocks, Stubs & Spies](https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/)
 
 Tools:
@@ -84,14 +86,15 @@ Tools:
 
 
 Code to Study:
-* [Last project with tests](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/sync-async-tested)
-* [Minimal Testing Libraries](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/04-testing-modules/minimal-testing-libraries)
+* [Last project with tests](https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/sync-async-tested)
+* [Minimal Testing Libraries](https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/minimal-testing-libraries)
 * [Proclaim.js](https://github.com/rowanmanning/proclaim)
 * [jsTinyTest](https://github.com/bennadel/TinyTestJS)
 * [Klud](https://bitbucket.org/zserge/klud.js/)
 
-Challenges:
+Next Steps:
 * [Async Unit Tests](https://martinfowler.com/articles/asyncJS.html)
+* [Mocha/Chai](https://www.youtube.com/watch?v=MLTRHc5dk6s)
 
 
 

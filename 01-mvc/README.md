@@ -8,13 +8,14 @@ Learn about the MVC architecture by refactoring a single function into a full MV
 * [Learning Objectives](#learning-objectives)
 * [Specifications](#specifications)
 * [Resources](#resources)
-* [Assessment](#assessment)
 
 ---
 
 ## Learning Objectives
 
 * MVC
+* Refactoring
+* Architectures are just guidelines
 
 [TOP](#index)
 
@@ -44,22 +45,16 @@ Additional Code to Study:
 * [A Progressive Gist](https://gist.github.com/darrenderidder/3325582)
 * [MVC Students](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-student-mvc)
 * [MVC Bakery](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-mvc-bakery)
+* Advanced: [Use It](http://todomvc.com/examples/vanillajs/), [Read It](https://github.com/tastejs/todomvc/tree/master/examples/vanillajs)
 
 Additional MVC Resources:
+* [Very Clear Article](https://medium.com/@patrickackerman/classic-front-end-mvc-with-vanilla-javascript-7eee550bc702)
 * [Walk-Through from Medium](https://medium.com/@ToddZebert/a-walk-through-of-a-simple-javascript-mvc-implementation-c188a69138dc)
 * [Sitepoint Penguin](https://www.sitepoint.com/mvc-design-pattern-javascript/)
-* [General Resources](https://elewa-academy.github.io/General-Resources/application-design/mvc.html)
+* [A Markdown](https://github.com/elewa-academy/General-Resources/blob/master/application-design/mvc.md)
 
 [TOP](#index)
 
----
-
-## Assessment
-
-links to google forms
-links to repo if there is a larger code-based assessment
-
-[TOP](#index)
 
 ___
 ___
