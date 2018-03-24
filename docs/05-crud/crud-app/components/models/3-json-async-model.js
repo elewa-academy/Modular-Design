@@ -1,1 +1,0 @@
-// an asynchronous version of json-sync-model.js
