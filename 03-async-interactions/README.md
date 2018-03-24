@@ -1,4 +1,4 @@
-# Async Modules
+# Async Interactions
 
 Let's learn a little about async programming.  In this project you will refactor your Todo List from Practical JavaScript into an Asynchronous application.
 
