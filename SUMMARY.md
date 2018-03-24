@@ -1,6 +1,6 @@
 # Summary
 
-* [Welcome](README.md)   
+* [Modular Design](README.md)   
 * [1. Ultra-Practical Javascript](00-ultra-practical-javascript/README.md)
 * [2. MVC](01-mvc/README.md)
 * [3. Dependency Injection](02-dependency-injection/README.md)
