@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1. Ultra-Practical Javascript · GitBook</title>
+        <title>2. MVC · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../01-mvc/" />
+    <link rel="next" href="../03-dependency-injection/" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../01-ultra-practical-javascript/" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../01-ultra-practical-javascript/">
             
-                <a href="./">
+                <a href="../01-ultra-practical-javascript/">
             
                     
                     1. Ultra-Practical Javascript
@@ -115,9 +115,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../01-mvc/">
+        <li class="chapter active" data-level="1.3" data-path="./">
             
-                <a href="../01-mvc/">
+                <a href="./">
             
                     
                     2. MVC
@@ -128,9 +128,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../02-dependency-injection/">
+        <li class="chapter " data-level="1.4" data-path="../03-dependency-injection/">
             
-                <a href="../02-dependency-injection/">
+                <a href="../03-dependency-injection/">
             
                     
                     3. Dependency Injection
@@ -141,12 +141,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../03-async-interactions/">
+        <li class="chapter " data-level="1.5" data-path="../04-inheritance/README.md">
             
-                <a href="../03-async-interactions/">
+                <span>
             
                     
-                    4. Async Interactions
+                    4. Inheritance
             
                 </a>
             
@@ -154,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../04-testing-modules/">
+        <li class="chapter " data-level="1.6" data-path="../05-async-interactions/README.md">
             
-                <a href="../04-testing-modules/">
+                <span>
             
                     
-                    5. Testing Modules
+                    5. Async Interactions
             
                 </a>
             
@@ -167,7 +167,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" >
+        <li class="chapter " data-level="1.7" data-path="../06-testing-modules/">
+            
+                <a href="../06-testing-modules/">
+            
+                    
+                    6. Testing Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
             
                 <a target="_blank" href="https://github.com/elewa-academy/General-Resources/wiki">
             
@@ -180,7 +193,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" >
+        <li class="chapter " data-level="1.9" >
             
                 <a target="_blank" href="https://github.com/elewa-academy/Modular-Design/tree/master/">
             
@@ -193,7 +206,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" >
+        <li class="chapter " data-level="1.10" >
             
                 <a target="_blank" href="https://elewa-academy.github.io">
             
@@ -236,7 +249,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1. Ultra-Practical Javascript</a>
+        <a href=".." >2. MVC</a>
     </h1>
 </div>
 
@@ -251,10 +264,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ultra-practical-javascript">Ultra Practical JavaScript</h1>
-<p>Take a breather, this project will be easy after Battle Ship!  You&apos;ll get a chance to revisit the planning and development process while learning about application design.</p>
-<p><a href="https://watchandcode.com/p/practical-javascript" target="_blank">Practical JavaScript</a> is an outstanding video series by <a href="https://github.com/gordonmzhu" target="_blank">Gordon Zhu</a> that walks you through developing a Todo app for the browser.  He does an exceptional job of organizing and explaining his development process: the app begins with a very basic implementation that he gradually refactors into a full frontend application. Along the way he introduces key JavaScript features and best practices.</p>
-<p>You will be expected to build a presentable repository to showcase what you learned in his tutorial.  He will have you build your code in Plunkr, something like Codepen.  After each version of his project you will move your code from Plunkr to a new branch in your Ultra Practical JavaScript repo and include an informative README. </p>
+                                <h1 id="mvc">MVC</h1>
+<p>The Infamous MVC! </p>
+<p>Learn about the MVC architecture by refactoring a single function into a full MVC application.  </p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
@@ -264,59 +276,43 @@
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>Application architecture</li>
-<li>Development Process (again)</li>
-<li>JavaScript Best Practices</li>
-<li>Branching &amp; Releases</li>
-<li>Development Environments</li>
+<li>MVC</li>
+<li>Refactoring</li>
+<li>Architectures are just guidelines</li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<p>You will follow the entirety of <a href="https://watchandcode.com/p/practical-javascript" target="_blank">Practical JavaScript</a>, building the same code as Gordon.  At the end of each version you will:</p>
 <ol>
-<li>Copy the code to a new branch on your computer</li>
-<li>Write a README for this version</li>
-<li>Merge that branch into master</li>
-<li>Tag the branch with the version number</li>
-<li>Push to GitHub: <ul>
-<li>The new branch</li>
-<li>Master branch</li>
-<li>The new version tag</li>
-</ul>
-</li>
+<li>Follow the progressive <a href="https://www.youtube.com/watch?v=6iI7_EiuvkE" target="_blank">MVC Refactor Videos</a>, coding along with George.  As you follow along, build a branch/release repo like you did for Practical JavaScript in the last project.  </li>
+<li>Read &amp; replicate the 3 Additional Codes To Study in the resource section.</li>
+<li>Refactor the final version of Practical JavaScript into a full MVC application.  You will again need to do this on a separate branch and create a new release for this newest version.</li>
 </ol>
-<p>The end result will be a repository organized by steps in the tutorial.  For each step you will have:</p>
-<ul>
-<li>A good README</li>
-<li>A branch</li>
-<li>A release</li>
-<li>Your code</li>
-</ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p>Practical JavaScript:</p>
+<p>George&apos;s Code Along:</p>
 <ul>
-<li><a href="https://watchandcode.com/p/practical-javascript" target="_blank">The Videos</a></li>
-<li><a href="https://thenewstack.io/learning-javascript-gordon-zhu-founder-watch-code/" target="_blank">About the Series</a></li>
-<li><a href="https://www.youtube.com/watch?v=gZAQ8qdmC9E" target="_blank">Who&apos;s it For?</a></li>
+<li><a href="https://www.youtube.com/watch?v=6iI7_EiuvkE" target="_blank">Video 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=ogGnQfAzZXE&amp;t=457s" target="_blank">Video 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=SwZ5yO60gJk" target="_blank">Video 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=xCgSUprXWwg&amp;t=86s" target="_blank">Video 4</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/MVC_list" target="_blank">Source Code</a></li>
 </ul>
-<p>Accompanying Resources:</p>
+<p>Additional Code to Study:</p>
 <ul>
-<li><a href="https://github.com/GeorgeFourikis/Simplify-JavaScript" target="_blank">A Reference that Follows the Videos</a></li>
-<li>Best Repo to Study, eugenetriguba: <ul>
-<li><a href="https://github.com/eugenetriguba/practical-js" target="_blank">Repo</a></li>
-<li><a href="https://eugenetriguba.github.io/practical-js" target="_blank">Demo</a></li>
+<li><a href="https://gist.github.com/darrenderidder/3325582" target="_blank">A Progressive Gist</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-student-mvc" target="_blank">MVC Students</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-mvc-bakery" target="_blank">MVC Bakery</a></li>
+<li><a href="https://github.com/joelrojo/Javascript-MVC" target="_blank">joelrojo</a></li>
+<li>Advanced: <a href="http://todomvc.com/examples/vanillajs/" target="_blank">Use It</a>, <a href="https://github.com/tastejs/todomvc/tree/master/examples/vanillajs" target="_blank">Read It</a></li>
 </ul>
-</li>
-<li><a href="https://github.com/EQuimper/All-About-Programming/tree/master/Courses/JavaScript/WatchAndCode%20-%20Practical%20JavaScript" target="_blank">Code to Study: EQuimper</a></li>
-<li><a href="https://github.com/mashablair/todo-app" target="_blank">Code to Study: mashablair</a></li>
-<li><a href="https://github.com/obwansan/practical-javascript" target="_blank">Code to Study: obwansan</a></li>
-</ul>
-<p>Branch/Releases Strategy:</p>
+<p>Additional MVC Resources:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance" target="_blank">Basic Branching/Merge</a></li>
+<li><a href="https://medium.com/@patrickackerman/classic-front-end-mvc-with-vanilla-javascript-7eee550bc702" target="_blank">Very Clear Article</a></li>
+<li><a href="https://medium.com/@ToddZebert/a-walk-through-of-a-simple-javascript-mvc-implementation-c188a69138dc" target="_blank">Walk-Through from Medium</a></li>
+<li><a href="https://www.sitepoint.com/mvc-design-pattern-javascript/" target="_blank">Sitepoint Penguin</a></li>
+<li><a href="https://github.com/elewa-academy/General-Resources/blob/master/application-design/mvc.md" target="_blank">A Markdown</a></li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
@@ -349,12 +345,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Modular Design">
+                <a href="../01-ultra-practical-javascript/" class="navigation navigation-prev " aria-label="Previous page: 1. Ultra-Practical Javascript">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../01-mvc/" class="navigation navigation-next " aria-label="Next page: 2. MVC">
+                <a href="../03-dependency-injection/" class="navigation navigation-next " aria-label="Next page: 3. Dependency Injection">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -365,7 +361,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. Ultra-Practical Javascript","level":"1.2","depth":1,"next":{"title":"2. MVC","level":"1.3","depth":1,"path":"01-mvc/README.md","ref":"01-mvc/README.md","articles":[]},"previous":{"title":"Modular Design","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"00-ultra-practical-javascript/README.md","mtime":"2018-03-10T11:59:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-25T16:22:16.720Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. MVC","level":"1.3","depth":1,"next":{"title":"3. Dependency Injection","level":"1.4","depth":1,"path":"03-dependency-injection/README.md","ref":"03-dependency-injection/README.md","articles":[]},"previous":{"title":"1. Ultra-Practical Javascript","level":"1.2","depth":1,"path":"01-ultra-practical-javascript/README.md","ref":"01-ultra-practical-javascript/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02-mvc/README.md","mtime":"2018-04-21T19:07:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-21T19:14:48.602Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
