@@ -45,7 +45,9 @@ Additional Code to Study:
 * [A Progressive Gist](https://gist.github.com/darrenderidder/3325582)
 * [MVC Students](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-student-mvc)
 * [MVC Bakery](https://github.com/elewa-academy/Modular-Design/tree/master/docs_src/01-mvc/rien-mvc-bakery)
+* [joelrojo](https://github.com/joelrojo/Javascript-MVC)
 * Advanced: [Use It](http://todomvc.com/examples/vanillajs/), [Read It](https://github.com/tastejs/todomvc/tree/master/examples/vanillajs)
+
 
 Additional MVC Resources:
 * [Very Clear Article](https://medium.com/@patrickackerman/classic-front-end-mvc-with-vanilla-javascript-7eee550bc702)
