@@ -1,9 +1,8 @@
 // This becomes simpler with es6 object literals.  that's coming later
-function model(_name, _schema) {
+function model(_name) {
 	
 	let new_obj = {
-		name: _name,
-		schema: _schema,
+		name: _name
 	};
 
 	let base_object = {
@@ -14,9 +13,6 @@ function model(_name, _schema) {
 		read_all: function() {},
 		update: function() {},
 		remove: function() {},
-		validate: function() {},
-		find_by: function() {},
-		find_by_challenges: function() {}
 	};
 
 	Object.assign(new_obj, base_object);
