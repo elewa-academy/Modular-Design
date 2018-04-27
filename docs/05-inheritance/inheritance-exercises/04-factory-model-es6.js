@@ -1,16 +1,12 @@
-const model = ( name = "none", schema ) => ({
+const model = ( name = "none") => ({
 		name,
-		schema,
 		nextID: 00,
 		DB: {},
 		create () {},
 		read_one () {},
 		read_all () {},
 		update () {},
-		remove () {},
-		validate () {},
-		find_by () {},
-		find_by_challenges () {}
+		remove () {}
 	});
 
 // this does some tricky things with closure.  
@@ -20,15 +16,11 @@ const challenge_model = ( name = "none", schema ) => (
 		let DB = {};
 		return {
 			get name() { return name },
-			get schema() { return schema },
 			create () {},
 			read_one () {},
 			read_all () {},
 			update () {},
-			remove () {},
-			validate () {},
-			find_by () {},
-			find_by_challenges () {}
+			remove () {}
 		}
 	);
 
