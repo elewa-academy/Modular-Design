@@ -29,8 +29,15 @@ You will be expected to build a presentable repository to showcase what you lear
 
 ## Specifications
 
-Individually you will:
-* Begin by making a new folder on your computer for [Practical JavaScript](https://watchandcode.com/p/practical-javascript), put in a README but otherwise it can be empty for now.  You will follow the entirety of Practical JavaSCript, building the same code as Gordon.  Each time you finish a version, copy it into a new folder in your Practical JavaScript directory and include a README for that version.
+Individually you will follow the entire [Practical JavaScript](https://watchandcode.com/p/practical-javascript) tutorial. 
+0. Create a new directory where you will store all of your work for this project. Put in a nice README, but that's all for now.
+1. For each version:
+  1. Follow his videos, rewriting his code on your own (in plunkr is fine).
+  2. Create a new folder named after this version in your directory.
+  3. Write a nice README to summarize what happened in this step.
+  4. Move your code into an index.html & js scripts files in this directory.
+
+ put in a README but otherwise it can be empty for now.  You will follow the entirety of Practical JavaSCript, building the same code as Gordon.  Each time you finish a version, copy it into a new folder in your Practical JavaScript directory and include a README for that version.
 
 
 Together we will:
