@@ -1,6 +1,6 @@
 # Ultra Practical JavaScript
 
-Take a breather, this project will be easy after Battle Ship!  You'll get a chance to revisit the planning and development process while learning about application design.
+Take a breather, this project will be relaxing after things like tictactoes.  You'll get a chance to revisit the planning and development process while learning about application design.
 
 [Practical JavaScript](https://watchandcode.com/p/practical-javascript) is an outstanding video series by [Gordon Zhu](https://github.com/gordonmzhu) that walks you through developing a Todo app for the browser.  He does an exceptional job of organizing and explaining his development process: the app begins with a very basic implementation that he gradually refactors into a full frontend application. Along the way he introduces key JavaScript features and best practices.
 
