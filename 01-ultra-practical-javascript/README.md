@@ -29,9 +29,13 @@ You will be expected to build a presentable repository to showcase what you lear
 
 ## Specifications
 
-You will follow the entirety of [Practical JavaScript](https://watchandcode.com/p/practical-javascript), building the same code as Gordon.  At the end of each version you will:
-1. Copy the code to a new branch on your computer
-2. Write a README for this version
+Individually you will:
+* Begin by making a new folder on your computer for [Practical JavaScript](https://watchandcode.com/p/practical-javascript), put in a README but otherwise it can be empty for now.  You will follow the entirety of Practical JavaSCript, building the same code as Gordon.  Each time you finish a version, copy it into a new folder in your Practical JavaScript directory and include a README for that version.
+
+
+Together we will:
+1. Copy the code from each folder to a new branch on your computer
+2. Polish a README for this version
 3. Merge that branch into master
 4. Tag the branch with the version number
 5. Push to GitHub: 
@@ -58,7 +62,7 @@ Practical JavaScript:
 * [About the Series](https://thenewstack.io/learning-javascript-gordon-zhu-founder-watch-code/)
 * [Who's it For?](https://www.youtube.com/watch?v=gZAQ8qdmC9E)
 
-Accompanying Resources:
+Accompanying PJS Resources:
 * [A Reference that Follows the Videos](https://github.com/GeorgeFourikis/Simplify-JavaScript)
 * Best Repo to Study, eugenetriguba: 
   * [Repo](https://github.com/eugenetriguba/practical-js)
@@ -66,9 +70,16 @@ Accompanying Resources:
 * [Code to Study: EQuimper](https://github.com/EQuimper/All-About-Programming/tree/master/Courses/JavaScript/WatchAndCode%20-%20Practical%20JavaScript)
 * [Code to Study: mashablair](https://github.com/mashablair/todo-app)
 * [Code to Study: obwansan](https://github.com/obwansan/practical-javascript)
+* [Gordon's finished code](https://github.com/gordonmzhu/practical-javascript/blob/master/todoList.html)
 
 Branch/Releases Strategy:
 * [Basic Branching/Merge](https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance)
+
+Demo Repositories:
+* (Not exactly the same project, but good examples of clean repos)
+* [TicTacToe Repo](https://github.com/elewa-student/tic-tac-toe/tree/master)
+* [CleanCalc Repo](https://github.com/radovandelic/cleancalc)
+
 
 [TOP](#index)
 
