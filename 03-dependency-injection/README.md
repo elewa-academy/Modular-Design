@@ -109,6 +109,7 @@ The finished product for this project will be a repo with 3 branches:
     * Build-time diagram 
     * Run-time specs
   * The source code
+3. Get and give at least one code review for this project.
 
 ([Example structure here](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/project-branch-structure))
 

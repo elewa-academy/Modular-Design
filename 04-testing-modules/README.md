@@ -59,7 +59,8 @@ The finished project will be a new release with:
   * Include instructions for running the tests
   * Updated Notes section
   * Anything else you'd like to put in there
-
+* /code-reviews
+  * Ask at least one person for a code review
 
 
 [TOP](#index)

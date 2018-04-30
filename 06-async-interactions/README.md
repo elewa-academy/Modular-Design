@@ -30,6 +30,7 @@ Your finished project consist of:
 * Updated README 
 * Updated gh-pages demo
 * A diagram to explain how your async Todo app works.  This can be structured however you like.
+* /code-reviews
 
 
 
