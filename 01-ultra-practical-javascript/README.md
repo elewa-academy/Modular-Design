@@ -42,7 +42,7 @@ Individually you will follow the entire [Practical JavaScript](https://watchandc
 
 Together we will:
 0. Create a new empty folder and repository
-1. Copy the code from each folder to a new branch on your computer
+1. Copy the code from each folder to a new empty branch on your computer
 2. Polish a README for this version
 3. Merge that branch into master
 4. Tag the branch with the version number
