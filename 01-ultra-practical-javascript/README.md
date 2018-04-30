@@ -45,7 +45,7 @@ Together we will:
 1. Copy the code from each folder to a new empty branch on your computer
 2. Polish a README for this version
 3. Merge that branch into master
-4. Tag the branch with the version number
+4. Place a new tag on master to mark the new version
 5. Push to GitHub: 
   * Updated master branch
   * The new version tag
