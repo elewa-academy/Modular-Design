@@ -47,8 +47,7 @@ Together we will:
 3. Merge that branch into master
 4. Tag the branch with the version number
 5. Push to GitHub: 
-  * The new branch
-  * Master branch
+  * Updated master branch
   * The new version tag
 
 
