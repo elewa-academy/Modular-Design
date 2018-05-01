@@ -130,7 +130,7 @@ You can see an example [here](https://github.com/elewa-student/Analyzing-Archite
 Project resources:
 * [MVC_list Demo](https://github.com/elewa-student/Analyzing-Architecture/tree/master)
 * [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/1-app-components-architecture) 
- [MVC-LH Architecture](https://github.com/elewa-academy/General-Resources/tree/master/application-design/mvc-lh)
+* [MVC-LH Architecture](https://github.com/elewa-academy/General-Resources/tree/master/application-design/mvc-lh)
 
 
 Dependency Injection:
