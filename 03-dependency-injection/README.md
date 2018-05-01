@@ -139,6 +139,7 @@ Dependency Injection:
   * [Inversion of Control](https://www.youtube.com/watch?v=-kpEP4JeEdc) (Trickier)
 * [Fleeboy Article](https://medium.com/@fleeboy/dependency-injection-in-javascript-9db9ea6e4288)
 * [Krasimirtsonev](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript)
+* [src specs, build-time, runtime specs](https://gist.github.com/colevandersWands/71e67f8c24d448f118b6cfe6fafbd8a0)
 
 Other Resources:
 * [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/intro-to-modules)
