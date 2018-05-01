@@ -1,3 +1,6 @@
+
+
+
 var model = {
     lastResult: 0,
     setLastResult: function(new_last_result) {

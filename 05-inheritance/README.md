@@ -28,11 +28,23 @@ To witness the power of inheritance we will build an application that allows use
 * swallows
 Each animal will be stored in a separate model object.
 
+A Zookeeper can ...
+* Feed an animal
+* Eat an animal
+* Rename an animal
+* Marry two animals
+* Buy more animals
+* Sell animals
+
 1. Create a planning chart for your application
-2. Write tests for each module
-3. Build the application with the simplest model
-4. Complete the rest of the inheritance exercises and create an app for each
-5. Code reviews!
+2. For each story:
+  1. Write tests for each module
+  2. Build the application with the simplest model
+3. For each Inheritance Exercise
+  1. Build the model
+  2. Build an app that uses your new model
+  3. Do you need to write new tests?
+4. Code reviews!
 
 
 [TOP](#index)
@@ -43,7 +55,8 @@ Each animal will be stored in a separate model object.
 
 
 
-https://github.com/joelrojo/Javascript-MVC/tree/master/javascript-racer-challenge
+* ["Objects" list in General Resources](https://github.com/elewa-academy/General-Resources/wiki/JavaScript)
+* [Great code to study](https://github.com/joelrojo/Javascript-MVC)
 
 [TOP](#index)
 

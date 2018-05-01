@@ -11,7 +11,7 @@ const model = ( name = "none") => ({
 
 // this does some tricky things with closure.  
 // https://medium.com/@pyrolistical/factory-functions-pattern-in-depth-356d14801c91
-const challenge_model = ( name = "none", schema ) => (
+const challenge_model = ( name = "none" ) => (
 		let nextID = 00,
 		let DB = {};
 		return {
