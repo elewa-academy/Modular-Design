@@ -22,6 +22,7 @@ You'll be reading, running, diagramming and documenting code.  No writing code t
 * Source code vs. Build-time vs. Run-time
 * Core app vs environment
 * Reading & analyzing modular projects
+* Design Patterns
 
 [TOP](#index)
 
@@ -129,6 +130,7 @@ You can see an example [here](https://github.com/elewa-student/Analyzing-Archite
 Project resources:
 * [MVC_list Demo](https://github.com/elewa-student/Analyzing-Architecture/tree/master)
 * [Code to Analyze](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/1-app-components-architecture) 
+ [MVC-LH Architecture](https://github.com/elewa-academy/General-Resources/tree/master/application-design/mvc-lh)
 
 
 Dependency Injection:

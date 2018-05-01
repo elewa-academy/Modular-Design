@@ -16,6 +16,7 @@ Learn about the MVC architecture by refactoring a single function into a full MV
 * MVC
 * Refactoring
 * Architectures are just guidelines
+* Design Patterns
 
 [TOP](#index)
 
@@ -24,9 +25,10 @@ Learn about the MVC architecture by refactoring a single function into a full MV
 ## Specifications
 
 1. Follow the progressive [MVC Refactor Videos](https://www.youtube.com/watch?v=6iI7_EiuvkE), coding along with George.  As you follow along, build a branch/release repo like you did for Practical JavaScript in the last project.  
-2. Read & replicate the 3 Additional Codes To Study in the resource section.
+2. Read & replicate the 2+ Additional Codes To Study in the resource section.
 3. Refactor the final version of Practical JavaScript into a full MVC application.  You will again need to do this on a separate branch and create a new release for this newest version.
-4. Get and give at least one code review for this project.
+4. Build a model object that uses Arrays, and one that uses Objects to explore the impact of data structures on implementation.
+5. Get and give at least one code review for this project.
 
 
 [TOP](#index)

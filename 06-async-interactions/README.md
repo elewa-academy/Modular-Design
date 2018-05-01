@@ -15,6 +15,7 @@ Let's learn a little about async programming.  In this project you will refactor
 
 * Async programming
 * Callbacks
+* Testing async code
 
 [TOP](#index)
 
@@ -30,6 +31,7 @@ Your finished project consist of:
 * Updated README 
 * Updated gh-pages demo
 * A diagram to explain how your async Todo app works.  This can be structured however you like.
+* Async Tests (go back to __Testing Modules__ to review async testing)
 * /code-reviews
 
 
