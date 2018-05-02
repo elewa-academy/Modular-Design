@@ -54,8 +54,12 @@ First read through the Testing articles and test library examples.
 
 Then complete these steps:
 * Sync source code & tests in one folder
+  * Unit tests for the smallest bits: each file/component
+  * Behavior tests for the largest bits: runtime code after it is built
   * A new section in the README: Code coverage & % Passing tests
 * Async source code & tests in another folder
+  * Unit tests for the smallest bits: each file/component
+  * Behavior tests for the largest bits: runtime code after it is built
   * A new section in the README: Code coverage & % Passing tests
 * An updated README
   * Include instructions for running the tests
