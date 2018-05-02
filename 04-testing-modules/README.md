@@ -50,7 +50,9 @@ In this project you'll experience first-hand one of the realms where stateful ob
 
 Use Tressa.js & Istabul to write tests for you PJS Todo List.  You will be expected to write tests for both the Synchronous and Asynchronous versions of your application.  These tests will be added to their respective branches.  ie. The async tests will be added to the async branch, the synchronous tests will be added to the most recent syncronous branch. 
 
-The finished project will be a new release with:
+First read through the Testing articles and test library examples.
+
+Then complete these steps:
 * Sync source code & tests in one folder
   * A new section in the README: Code coverage & % Passing tests
 * Async source code & tests in another folder
