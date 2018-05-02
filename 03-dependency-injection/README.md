@@ -145,6 +145,8 @@ Other Resources:
 * [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/intro-to-modules)
 * [Visualizing Git Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
 * [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/0-most-basic)
+* [JS Runtimes](https://www.quora.com/What-is-the-difference-between-javascript-engine-and-javascript-runtime)
+* [What is Node.js](https://www.infoworld.com/article/3210589/node-js/what-is-nodejs-javascript-runtime-explained.html)
 
 Challenge Articles:
 * [DI & Testing](https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be)
