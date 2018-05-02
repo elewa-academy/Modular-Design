@@ -31,6 +31,7 @@ This means that the tests you write and publish along with your code are the ult
 * Integrating tests into a codebase
 * Using test cases to explain yourself
 * Object State
+* Exploring and understanding source code
 
 ### State
 
