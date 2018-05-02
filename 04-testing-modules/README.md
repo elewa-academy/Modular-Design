@@ -52,7 +52,7 @@ Use Tressa.js & Istabul to write tests for you PJS Todo List.  You will be expec
 
 First read through the Testing articles and test library examples.
 
-Then complete these steps:
+Then copy the Mix & Match Operations app and write your own tests for it:
 * Sync source code & tests in one folder
   * Unit tests for the smallest bits: each file/component
   * Behavior tests for the largest bits: runtime code after it is built
