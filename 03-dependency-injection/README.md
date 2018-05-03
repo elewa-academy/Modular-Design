@@ -143,6 +143,7 @@ Dependency Injection:
 
 Other Resources:
 * [Exporting & Requiring](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/intro-to-modules)
+* [Navigating CodeBase](https://github.com/elewa-academy/General-Resources/blob/fd7496884b7644247f1caebc35082e52316463da/programming-resources/navigating-codebase.md)
 * [Visualizing Git Branches](https://stackoverflow.com/questions/3666953/showing-git-branch-structure)
 * [Simpler Code to Practice Reading](https://github.com/elewa-academy/Modular-Design/tree/master/02-dependency-injection/0-most-basic)
 * [DI & Testing](https://medium.com/@daniel.oliver.king/dependency-injection-practical-examples-for-testing-and-refactoring-in-javascript-3cb5b58b50be)

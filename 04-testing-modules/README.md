@@ -95,6 +95,7 @@ Tools:
 
 
 Code to Study:
+* [Navigating CodeBase](https://github.com/elewa-academy/General-Resources/blob/fd7496884b7644247f1caebc35082e52316463da/programming-resources/navigating-codebase.md)
 * [Last project with tests](https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/sync-async-tested)
 * [Minimal Testing Libraries](https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/minimal-testing-libraries)
 * [Proclaim.js](https://github.com/rowanmanning/proclaim)
