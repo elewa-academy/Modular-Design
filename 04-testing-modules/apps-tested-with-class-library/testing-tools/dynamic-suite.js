@@ -7,4 +7,3 @@ function test_suite(test, testee, cases) {
 };
 
 module.exports = test_suite;
-
