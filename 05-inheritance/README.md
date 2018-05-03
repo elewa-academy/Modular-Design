@@ -36,6 +36,7 @@ A Zookeeper can ...
 * Buy more animals
 * Sell animals
 
+0. Study [this markdown](https://github.com/elewa-academy/General-Resources/blob/master/javascript/using-js/prototypes.md) to explore how Prototypes work in JS
 1. Create a planning chart for your application
 2. For each story:
   1. Write tests for each module
