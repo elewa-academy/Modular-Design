@@ -86,7 +86,7 @@ Testing:
 * [Pt. 1 - Code Coverage](https://medium.com/@WebReflection/js-vanilla-test-code-coverage-7b7ba3740776)
 * [Pt. 2 - Tressa](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121)
 * [Pure Functions, Easy Testing](https://github.com/foundersandcoders/ws-pure-functions-easy-testing)
-* [Mocks, Stubs & Spies](https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/)
+* [Mocks, Stubs & Spies](https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/). (Stateful components, hard testing)
 
 Tools:
 * [Tressa in a NutShell](https://gist.github.com/WebReflection/00531a64bb7b846c9b78e059fc0441ff)

@@ -8,3 +8,5 @@ console.log('howdy');
 
 
 /// no export statement
+// kind of like returning undefined
+//	only undefined is an empty object
