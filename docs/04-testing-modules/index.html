@@ -1,0 +1,458 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Testing Modules · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../05-inheritance/" />
+    
+    
+    <link rel="prev" href="../03-dependency-injection/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Modular Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-ultra-practical-javascript/">
+            
+                <a href="../01-ultra-practical-javascript/">
+            
+                    
+                    1. Ultra-Practical Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-mvc/">
+            
+                <a href="../02-mvc/">
+            
+                    
+                    2. MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03-dependency-injection/">
+            
+                <a href="../03-dependency-injection/">
+            
+                    
+                    3. Dependency Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4. Testing Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-inheritance/">
+            
+                <a href="../05-inheritance/">
+            
+                    
+                    5. Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-async-interactions/">
+            
+                <a href="../06-async-interactions/">
+            
+                    
+                    6. Async Interactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <a target="_blank" href="https://github.com/elewa-academy/General-Resources/wiki">
+            
+                    
+                    Wiki
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <a target="_blank" href="https://github.com/elewa-academy/Modular-Design/tree/master/">
+            
+                    
+                    Repo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <a target="_blank" href="https://elewa-academy.github.io">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. Testing Modules</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="testing-modules">Testing Modules</h1>
+<p>Writing tests for your code is one of the most important steps in the development process.  Good tests will help with documenting your code, QA, refactoring, maintenance, and everything in between.  </p>
+<p>Everyone agrees that tests are important, but people argue to the ends of the internet about how to fit tests into the development process. Do you write them first? Do you test your code every couple minutes? Do you pass your code off to testers after writing it?  In this project you won&apos;t worry about any of that, the focus here is to get used to writing and reading tests.  </p>
+<p>So far in with these projects we&apos;ve talked about specs (args, return, behavior) as the measure of code - any code matching the same specs is interchangeable.  In this project you will take this idea to the next level:</p>
+<blockquote>
+<p>The tests define the module</p>
+</blockquote>
+<p>This means that the tests you write and publish along with your code are the ultimate guide to your project.  </p>
+<ul>
+<li>Anyone should be able to read your test files and understand what your project does.</li>
+<li>Any code that passes your tests should be able to replace your module in an application.</li>
+</ul>
+<h3 id="index">Index</h3>
+<ul>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<hr>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Tests define and document your modules</li>
+<li>Testing modular code</li>
+<li>Coming up with Test Cases</li>
+<li>Integrating tests into a codebase</li>
+<li>Using test cases to explain yourself</li>
+<li>Object State</li>
+<li>Exploring and understanding source code</li>
+</ul>
+<h3 id="state">State</h3>
+<p>This is a concept that will come up again later when you learn about Functional Programming, and again when you learn React.  For now we&apos;ll stick to a very basic definition:</p>
+<ul>
+<li>State is any property in an object.</li>
+</ul>
+<p>Pretty simple as far as concepts go, but it becomes complicated in practice when objects are changing their values all the time.  As you move through your developer journey you will probably come to appreciate the simplicity that comes with <em>stateless</em> design.  The simplest instance of <em>stateful</em> vs <em>stateless</em> design is objects vs pure functions. </p>
+<p>In this project you&apos;ll experience first-hand one of the realms where stateful objects are more difficult to deal with than pure functions:  Testing. </p>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="specifications">Specifications</h2>
+<p>Use Tressa.js &amp; Istabul to write tests for you PJS Todo List.  You will be expected to write tests for both the Synchronous and Asynchronous versions of your application.  These tests will be added to their respective branches.  ie. The async tests will be added to the async branch, the synchronous tests will be added to the most recent syncronous branch. </p>
+<p>First read through the Testing articles and test library examples.</p>
+<p>Then copy the Mix &amp; Match Operations app and write your own tests for it:</p>
+<ul>
+<li>Sync source code &amp; tests in one folder<ul>
+<li>Unit tests for the smallest bits: each file/component</li>
+<li>Behavior tests for the largest bits: runtime code after it is built</li>
+<li>A new section in the README: Code coverage &amp; % Passing tests</li>
+</ul>
+</li>
+<li>Async source code &amp; tests in another folder<ul>
+<li>Unit tests for the smallest bits: each file/component</li>
+<li>Behavior tests for the largest bits: runtime code after it is built</li>
+<li>A new section in the README: Code coverage &amp; % Passing tests</li>
+</ul>
+</li>
+<li>An updated README<ul>
+<li>Include instructions for running the tests</li>
+<li>Updated Notes section</li>
+<li>Anything else you&apos;d like to put in there</li>
+</ul>
+</li>
+<li>/code-reviews<ul>
+<li>Ask at least one person for a code review</li>
+</ul>
+</li>
+</ul>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="resources">Resources</h2>
+<p>Assert:</p>
+<ul>
+<li><a href="https://nodejs.org/api/assert.html" target="_blank">In Node</a></li>
+<li><a href="https://www.w3schools.com/nodejs/ref_assert.asp" target="_blank">W3Schools</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert" target="_blank">In the Browser</a></li>
+<li><a href="https://github.com/rowanmanning/proclaim" target="_blank">In the Terminal</a></li>
+</ul>
+<p>Testing:</p>
+<ul>
+<li><a href="https://medium.com/@WebReflection/js-vanilla-test-code-coverage-7b7ba3740776" target="_blank">Pt. 1 - Code Coverage</a></li>
+<li><a href="https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121" target="_blank">Pt. 2 - Tressa</a></li>
+<li><a href="https://github.com/foundersandcoders/ws-pure-functions-easy-testing" target="_blank">Pure Functions, Easy Testing</a></li>
+<li><a href="https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/" target="_blank">Mocks, Stubs &amp; Spies</a>. (Stateful components, hard testing)</li>
+</ul>
+<p>Tools:</p>
+<ul>
+<li><a href="https://gist.github.com/WebReflection/00531a64bb7b846c9b78e059fc0441ff" target="_blank">Tressa in a NutShell</a></li>
+<li><a href="https://github.com/WebReflection/tressa#tressa-%20%20jstinytest" target="_blank">Tressa.js</a></li>
+<li><a href="https://istanbul.js.org" target="_blank">Istanbul.js</a></li>
+</ul>
+<p>Code to Study:</p>
+<ul>
+<li><a href="https://github.com/elewa-academy/General-Resources/blob/fd7496884b7644247f1caebc35082e52316463da/programming-resources/navigating-codebase.md" target="_blank">Navigating CodeBase</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/sync-async-tested" target="_blank">Last project with tests</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/04-testing-modules/minimal-testing-libraries" target="_blank">Minimal Testing Libraries</a></li>
+<li><a href="https://github.com/rowanmanning/proclaim" target="_blank">Proclaim.js</a></li>
+<li><a href="https://github.com/bennadel/TinyTestJS" target="_blank">jsTinyTest</a></li>
+<li><a href="https://bitbucket.org/zserge/klud.js/" target="_blank">Klud</a></li>
+</ul>
+<p>Next Steps:</p>
+<ul>
+<li><a href="https://martinfowler.com/articles/asyncJS.html" target="_blank">Async Unit Tests</a></li>
+<li><a href="https://www.youtube.com/watch?v=MLTRHc5dk6s" target="_blank">Mocha/Chai</a></li>
+</ul>
+<p><a href="#index">TOP</a></p>
+<hr>
+<h2 id="assessment">Assessment</h2>
+<p>links to google forms
+links to repo if there is a larger code-based assessment</p>
+<p><a href="#index">TOP</a></p>
+<hr>
+<hr>
+<h3 id=""><a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"></a></h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../03-dependency-injection/" class="navigation navigation-prev " aria-label="Previous page: 3. Dependency Injection">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../05-inheritance/" class="navigation navigation-next " aria-label="Next page: 5. Inheritance">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Testing Modules","level":"1.5","depth":1,"next":{"title":"5. Inheritance","level":"1.6","depth":1,"path":"05-inheritance/README.md","ref":"05-inheritance/README.md","articles":[]},"previous":{"title":"3. Dependency Injection","level":"1.4","depth":1,"path":"03-dependency-injection/README.md","ref":"03-dependency-injection/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04-testing-modules/README.md","mtime":"2018-05-03T13:41:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-04T13:39:09.830Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

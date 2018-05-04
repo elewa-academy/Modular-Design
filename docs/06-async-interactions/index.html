@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1. Ultra-Practical Javascript · GitBook</title>
+        <title>6. Async Interactions · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../02-mvc/" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../05-inheritance/" />
     
 
     </head>
@@ -102,9 +100,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../01-ultra-practical-javascript/">
             
-                <a href="./">
+                <a href="../01-ultra-practical-javascript/">
             
                     
                     1. Ultra-Practical Javascript
@@ -167,9 +165,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../06-async-interactions/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../06-async-interactions/">
+                <a href="./">
             
                     
                     6. Async Interactions
@@ -249,7 +247,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1. Ultra-Practical Javascript</a>
+        <a href=".." >6. Async Interactions</a>
     </h1>
 </div>
 
@@ -264,92 +262,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ultra-practical-javascript">Ultra Practical JavaScript</h1>
-<p>Take a breather, this project will be relaxing after things like tictactoes.  You&apos;ll get a chance to revisit the planning and development process while learning about application design.</p>
-<p><a href="https://watchandcode.com/p/practical-javascript" target="_blank">Practical JavaScript</a> is an outstanding video series by <a href="https://github.com/gordonmzhu" target="_blank">Gordon Zhu</a> that walks you through developing a Todo app for the browser.  He does an exceptional job of organizing and explaining his development process: the app begins with a very basic implementation that he gradually refactors into a full frontend application. Along the way he introduces key JavaScript features and best practices.</p>
-<p>You will be expected to build a presentable repository to showcase what you learned in his tutorial.  He will have you build your code in Plunkr, something like Codepen.  After each version of his project you will move your code from Plunkr to a new branch in your Ultra Practical JavaScript repo and include an informative README. </p>
+                                <h1 id="async-interactions">Async Interactions</h1>
+<p>Let&apos;s learn a little about async programming.  In this project you will refactor your Todo List from Practical JavaScript into an Asynchronous application.</p>
 <h3 id="index">Index</h3>
 <ul>
 <li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#specifications">Specifications</a></li>
 <li><a href="#resources">Resources</a></li>
+<li><a href="#assessment">Assessment</a></li>
 </ul>
 <hr>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>Application architecture</li>
-<li>Development Process (again)</li>
-<li>JavaScript Best Practices</li>
-<li>Branching &amp; Releases</li>
-<li>Development Environments</li>
+<li>Async programming</li>
+<li>Callbacks</li>
+<li>Testing async code</li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="specifications">Specifications</h2>
-<p>Individually you will follow the entire <a href="https://watchandcode.com/p/practical-javascript" target="_blank">Practical JavaScript</a> tutorial. </p>
-<ol>
-<li>Create a new directory where you will store all of your work for this project. Put in a nice README, but that&apos;s all for now.</li>
-<li><p>For each version:</p>
-<ol>
-<li>Follow his videos, rewriting his code on your own (in plunkr is fine).</li>
-<li>Create a new folder named after this version in your directory.</li>
-<li>Write a nice README to summarize what happened in this step.</li>
-<li>Move your code into an index.html &amp; js scripts files in this directory.</li>
-</ol>
-<p>put in a README but otherwise it can be empty for now.  You will follow the entirety of Practical JavaSCript, building the same code as Gordon.  Each time you finish a version, copy it into a new folder in your Practical JavaScript directory and include a README for that version.</p>
-</li>
-</ol>
-<p>Together we will:</p>
-<ol>
-<li>Create a new empty folder and repository</li>
-<li>Copy the code from each folder to a new empty branch on your computer</li>
-<li>Polish a README for this version</li>
-<li>Merge that branch into master</li>
-<li>Place a new tag on master to mark the new version</li>
-<li>Push to GitHub: <ul>
-<li>Updated master branch</li>
-<li>The new version tag</li>
-</ul>
-</li>
-</ol>
-<p>The end result will be a repository organized by steps in the tutorial.  For each step you will have:</p>
+<p>Refactor your MVC version of Practical JavaScript to use async components.  As before you will refactor on a new branch.</p>
+<p>Your finished project consist of:</p>
 <ul>
-<li>A good README</li>
-<li>A branch</li>
-<li>A release</li>
-<li>Your code</li>
+<li>A new branch and release in your PJS repo</li>
+<li>Updated README </li>
+<li>Updated gh-pages demo</li>
+<li>A diagram to explain how your async Todo app works.  This can be structured however you like.</li>
+<li>Async Tests (go back to <strong>Testing Modules</strong> to review async testing)</li>
+<li>/code-reviews</li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
 <h2 id="resources">Resources</h2>
-<p>Practical JavaScript:</p>
+<p>Using Callbacks:</p>
 <ul>
-<li><a href="https://watchandcode.com/p/practical-javascript" target="_blank">The Videos</a></li>
-<li><a href="https://thenewstack.io/learning-javascript-gordon-zhu-founder-watch-code/" target="_blank">About the Series</a></li>
-<li><a href="https://www.youtube.com/watch?v=gZAQ8qdmC9E" target="_blank">Who&apos;s it For?</a></li>
-</ul>
-<p>Accompanying PJS Resources:</p>
-<ul>
-<li><a href="https://github.com/GeorgeFourikis/Simplify-JavaScript" target="_blank">A Reference that Follows the Videos</a></li>
-<li>Best Repo to Study, eugenetriguba: <ul>
-<li><a href="https://github.com/eugenetriguba/practical-js" target="_blank">Repo</a></li>
-<li><a href="https://eugenetriguba.github.io/practical-js" target="_blank">Demo</a></li>
-</ul>
-</li>
-<li><a href="https://github.com/EQuimper/All-About-Programming/tree/master/Courses/JavaScript/WatchAndCode%20-%20Practical%20JavaScript" target="_blank">Code to Study: EQuimper</a></li>
-<li><a href="https://github.com/mashablair/todo-app" target="_blank">Code to Study: mashablair</a></li>
-<li><a href="https://github.com/obwansan/practical-javascript" target="_blank">Code to Study: obwansan</a></li>
-<li><a href="https://github.com/gordonmzhu/practical-javascript/blob/master/todoList.html" target="_blank">Gordon&apos;s finished code</a></li>
-</ul>
-<p>Branch/Releases Strategy:</p>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance" target="_blank">Basic Branching/Merge</a></li>
-</ul>
-<p>Demo Repositories:</p>
-<ul>
-<li>(Not exactly the same project, but good examples of clean repos)</li>
-<li><a href="https://github.com/elewa-student/tic-tac-toe/tree/master" target="_blank">TicTacToe Repo</a></li>
-<li><a href="https://github.com/radovandelic/cleancalc" target="_blank">CleanCalc Repo</a></li>
+<li><a href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D" target="_blank">Video &amp; Visualization Tool</a></li>
+<li>Async Programming: <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH" target="_blank">Vidoes</a>, <a href="https://github.com/elewa-academy/General-Resources/blob/master/javascript/async.md" target="_blank">Markdown 1</a>, <a href="https://github.com/elewa-academy/General-Resources/blob/master/javascript/async-callbacks.md" target="_blank">Markdown 2</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/03-async-modules/callbacks" target="_blank">Progressive Callback Examples</a></li>
+<li><a href="https://javascript.info/callbacks" target="_blank">JavaScript.info</a></li>
+<li><a href="https://github.com/elewa-academy/Modular-Design/tree/master/" target="_blank">App to Study</a></li>
+<li><a href="https://docs.google.com/presentation/d/16O1__rTtownarL_6n70RhavYkPjvZJOCtfEqQOeDt18/edit#slide=id.g1185dd92cf_0_0" target="_blank">Google Drive Slides</a></li>
 </ul>
 <p><a href="#index">TOP</a></p>
 <hr>
@@ -382,14 +334,10 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Modular Design">
+                <a href="../05-inheritance/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5. Inheritance">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../02-mvc/" class="navigation navigation-next " aria-label="Next page: 2. MVC">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -398,7 +346,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. Ultra-Practical Javascript","level":"1.2","depth":1,"next":{"title":"2. MVC","level":"1.3","depth":1,"path":"02-mvc/README.md","ref":"02-mvc/README.md","articles":[]},"previous":{"title":"Modular Design","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01-ultra-practical-javascript/README.md","mtime":"2018-04-30T09:51:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-04T13:39:09.830Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. Async Interactions","level":"1.7","depth":1,"next":{"title":"Wiki","level":"1.8","depth":1,"url":"https://github.com/elewa-academy/General-Resources/wiki","ref":"https://github.com/elewa-academy/General-Resources/wiki","articles":[]},"previous":{"title":"5. Inheritance","level":"1.6","depth":1,"path":"05-inheritance/README.md","ref":"05-inheritance/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06-async-interactions/README.md","mtime":"2018-05-04T13:07:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-04T13:39:09.830Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

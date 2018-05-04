@@ -1,1 +1,0 @@
-The same core as ../browser-only but with the Handler and View replaced so it can run in the terminal.

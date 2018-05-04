@@ -1,1 +1,0 @@
-build and test these in order.   For each one you complete make a folder containing your finished code, tests, user documentation, and learning journal.
