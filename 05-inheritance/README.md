@@ -61,6 +61,7 @@ Project:
 * ["Objects" list in General Resources](https://github.com/elewa-academy/General-Resources/wiki/JavaScript)
 * [Great code to study](https://github.com/joelrojo/Javascript-MVC)
 * [Closures](https://github.com/elewa-academy/General-Resources/blob/master/javascript/closures.md)
+* [5 ways to make objects](https://javascriptweblog.wordpress.com/2010/03/16/five-ways-to-create-obejcts-part-2-inheritance/)
 
 [TOP](#index)
 
