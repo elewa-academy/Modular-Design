@@ -16,3 +16,9 @@ pseudo_model_constructor.protoype = {
 
 // we give them just this, they fill it out
 
+// wrapper to avoid using "new"
+// function model_wrapper(_name) {
+// 	return new model(_name);
+// }
+
+// module.exports = model_wrapper

@@ -19,4 +19,10 @@ let model = {
 		}
 };
 
+module.exports = model;
+
 // we give them just this, they fill it out
+
+// try requiring this multiple times
+//	module.exports are "singletons": only one exists in the runtime
+//	requiring something just gives you a pointer to the runtime-global object
