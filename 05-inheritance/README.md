@@ -26,6 +26,7 @@ To witness the power of inheritance we will build an application that allows use
 * kangaroos
 * orcas
 * swallows
+
 Each animal will be stored in a separate model object.
 
 A Zookeeper can ...
