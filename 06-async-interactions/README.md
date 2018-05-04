@@ -48,6 +48,7 @@ Using Callbacks:
 * [Progressive Callback Examples](https://github.com/elewa-academy/Modular-Design/tree/master/03-async-modules/callbacks)
 * [JavaScript.info](https://javascript.info/callbacks)
 * [App to Study](https://github.com/elewa-academy/Modular-Design/tree/master/)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md)
 * [Google Drive Slides](https://docs.google.com/presentation/d/16O1__rTtownarL_6n70RhavYkPjvZJOCtfEqQOeDt18/edit#slide=id.g1185dd92cf_0_0)
 
 

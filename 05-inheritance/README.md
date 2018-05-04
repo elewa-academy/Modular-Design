@@ -60,7 +60,8 @@ Project:
 * [Prototype Markdown](https://github.com/elewa-academy/General-Resources/blob/master/javascript/using-js/prototypes.md)
 * ["Objects" list in General Resources](https://github.com/elewa-academy/General-Resources/wiki/JavaScript)
 * [Great code to study](https://github.com/joelrojo/Javascript-MVC)
-* [Closures](https://github.com/elewa-academy/General-Resources/blob/master/javascript/closures.md)
+* [You Don't Know JS - prototypes](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch5.md)
+* [Closures - You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md)
 * [5 ways to make objects](https://javascriptweblog.wordpress.com/2010/03/16/five-ways-to-create-obejcts-part-2-inheritance/)
 
 [TOP](#index)
