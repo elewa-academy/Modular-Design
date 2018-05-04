@@ -1,5 +1,5 @@
 // A nice way to understand what's happening in constructor functions
-function model(_name) {
+function pseudo_model_constructor(_name) {
 
 	let new_obj = Object.create(pseudo_model_constructor.prototype)
 

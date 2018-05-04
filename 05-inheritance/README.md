@@ -60,6 +60,7 @@ Project:
 * [Prototype Markdown](https://github.com/elewa-academy/General-Resources/blob/master/javascript/using-js/prototypes.md)
 * ["Objects" list in General Resources](https://github.com/elewa-academy/General-Resources/wiki/JavaScript)
 * [Great code to study](https://github.com/joelrojo/Javascript-MVC)
+* [Closures](https://github.com/elewa-academy/General-Resources/blob/master/javascript/closures.md)
 
 [TOP](#index)
 
