@@ -14,7 +14,7 @@ pseudo_model_constructor.protoype = {
 		remove: function() {}
 	};
 
-// we give them just this, they fill it out
+
 
 // wrapper to avoid using "new"
 // function model_wrapper(_name) {
