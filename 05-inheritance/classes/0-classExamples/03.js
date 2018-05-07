@@ -17,6 +17,22 @@ class OGaccountClass {
 var accObj1 = new OGaccountClass(6);
 console.log(accObj1.cash)
 
+
+// ---------------- constructor
+
+function OGaccountClass_constructor(money) {
+	this.money = money;
+} 
+
+OGaccountClass_constructor.prototpye.changeCash = function(deltaCash) {
+				this.cash = this.cash * deltaCash;
+			}; 
+
+OGaccountClass_constructor.prototpye.displayCash = function() {
+				console.log('i has this many monies: ' + this.cash);
+			}; 
+
+
 // ---------------------------------- //
 // for comparison, here's the same thing in plain javascript
 

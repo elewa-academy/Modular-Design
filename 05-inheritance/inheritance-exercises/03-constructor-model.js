@@ -1,3 +1,5 @@
+// any function can be a constructor if you use the "new" key word
+
 function model(_name) {
 
 	this.nextId = 00;
@@ -6,7 +8,7 @@ function model(_name) {
 
 };
 
-pseudo_model_constructor.protoype = {
+model.protoype = {
 		create: function() {},
 		read_one: function() {},
 		read_all: function() {},

@@ -18,3 +18,11 @@ console.log(pedroNametag.name);
 var peterNametag = new nameTag('peter');
 console.log(peterNametag.name);
 
+
+
+// ---------------- constructor
+
+function nameTag_constructor(name) {
+	this.name = name;
+} 
+

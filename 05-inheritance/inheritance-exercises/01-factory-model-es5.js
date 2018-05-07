@@ -12,7 +12,7 @@ function model_factory(_name) {
 		read_one: function() {},
 		read_all: function() {},
 		update: function() {},
-		remove: function() {},
+		remove: function() {}
 	};
 
 	Object.assign(new_obj, base_object);

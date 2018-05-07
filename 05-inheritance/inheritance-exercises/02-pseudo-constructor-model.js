@@ -3,7 +3,7 @@ function pseudo_model_constructor(_name) {
 
 	let new_obj = Object.create(pseudo_model_constructor.prototype)
 
-	new_obj.nextId = 00;
+	new_obj.nextId = 00;  // hasOwnProperty -> true
 	new_obj.name = _name;
 	new_obj.DB = {};
 
@@ -12,7 +12,7 @@ function pseudo_model_constructor(_name) {
 };
 
 pseudo_model_constructor.protoype = {
-		create: function() {},
+		create: function() {},  // hasOwnProperty -> false
 		read_one: function() {},
 		read_all: function() {},
 		update: function() {},

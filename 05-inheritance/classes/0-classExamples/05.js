@@ -13,12 +13,16 @@ class OGaccountClass1 {
 	}
 };
 
+OGaccountClass1.prototype.extra = "extra"
+
 //--------------------------------------------------//
 
 var accObj1 = new OGaccountClass1(6);
 var accObj2 = new OGaccountClass1(4);
 console.log(accObj1);
 console.log(accObj2);
+
+console.log(accObj2.extra)
 
 // by adding methods or properties to class.prototype you can STILL dynamically modify all offspring
 // 	they continue to point to their parent class

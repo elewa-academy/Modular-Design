@@ -49,6 +49,9 @@ Project:
   3. Do you need to write new tests?
 4. Code reviews!
 
+Challenge:
+* Re-implement the functionality for "super" and "extends" from ES6 Classes in ES5 using prototypes.
+
 
 [TOP](#index)
 
