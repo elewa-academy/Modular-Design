@@ -1,5 +1,5 @@
 //  Phase 3: offspring siblings	
-// offspring of the same class have no access to eachother
+// offspring of the same class have no access to each other
 // doing something to one does absolutely nothing to the others
 
 class OGaccountClass1 {

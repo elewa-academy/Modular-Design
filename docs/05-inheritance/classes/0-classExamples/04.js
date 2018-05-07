@@ -8,7 +8,7 @@ class OGaccountClass1 {
 	constructor(money) {
 		this.cash = money;
 	}
-	changeCash(deltaCash) {
+	changeCash(deltaCash) {  // hasOwnProperty = false
 		this.cash = this.cash + deltaCash;
 	}
 	displayCash() {
@@ -30,7 +30,7 @@ accObj1.displayCash();
 class OGaccountClass2 {
 	constructor(money) {
 		this.cash = money;
-		this.changeCash = function(deltaCash) {
+		this.changeCash = function(deltaCash) {  // hasOwnProperty = true
 				this.cash = this.cash + deltaCash;
 			};
 		this.displayCash = function() {
@@ -45,3 +45,38 @@ console.log(accObj.changeCash);
 // and of course the object can use it
 accObj2.changeCash(5);
 accObj2.displayCash();
+
+var accObj1 = new OGaccountClass(6);
+console.log(accObj1.cash)
+
+
+
+
+// ---------------- constructor
+
+function OGaccountClass_constructor2(money) {
+	this.money = money;
+	this.changeCash = function(deltaCash) {
+				this.cash = this.cash * deltaCash;
+			}; 
+	this.prototpye.displayCash = function() {
+				console.log('i has this many monies: ' + this.cash);
+			}; 
+
+} 
+
+
+
+function OGaccountClass_constructor2(money) {
+	this.money = money;
+} 
+
+OGaccountClass_constructor.prototpye.changeCash = function(deltaCash) {
+				this.cash = this.cash * deltaCash;
+			}; 
+
+OGaccountClass_constructor.prototpye.displayCash = function() {
+				console.log('i has this many monies: ' + this.cash);
+			}; 
+
+

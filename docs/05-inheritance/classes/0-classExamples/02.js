@@ -17,3 +17,14 @@ pedroNametag.beRead();
 var peterNametag = new nameTag('peter');
 pedroNametag.beRead();
 
+
+
+// ---------------- constructor
+
+function nameTag_constructor(name) {
+	this.name = name;
+} 
+
+nameTag_constructor.prototpye.beRead = function() {
+				console.log(this.name)
+			} 
