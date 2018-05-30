@@ -34,7 +34,7 @@ var handler = {
 
 var controller = {
     add: function(a, b) {
-        var lastResult = model.getlastResult();
+        var lastResult = model.getLastResult();
         var result = logic.add(a, b, lastResult);
         model.setLastResult(result);
         view.render(result);

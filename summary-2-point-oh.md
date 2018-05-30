@@ -13,3 +13,5 @@
 * [Wiki](https://github.com/elewa-academy/General-Resources/wiki)
 * [Repo](https://github.com/elewa-academy/Modular-Design/tree/master/)
 * [Home](https://elewa-academy.github.io)
+
+add a project where you implement feature by feature using the chart, this archi, and given user stories

@@ -9,10 +9,11 @@ let model = {
     },
     getLastResult: function() {
     	var raw_last_result = fs.readFileSync(path.join(__dirname, '../db.txt'), 'utf8');
-    	console.log(raw_last_result, "ee")
+    	console.log(this.lastResult)
         return Number(raw_last_result);
     },
 };
 
 
-module.exports = model;
+module.exports = model
+
