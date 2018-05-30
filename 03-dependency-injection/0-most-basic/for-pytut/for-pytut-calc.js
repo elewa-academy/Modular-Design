@@ -1,9 +1,3 @@
-// modify the variable declarations to pass arguments through the calc
-let a = undefined;
-let b = undefined;
-
-handler.add();
-
 // -- the app --
 
 let handler = {
@@ -23,7 +17,7 @@ let controller = {
 };
 
 let model = {
-    lastResult: 0000,
+    lastResult: 0,
     setLastResult: function(new_last_result) {
         this.lastResult = new_last_result;
     },
@@ -34,7 +28,7 @@ let model = {
 
 let logic = {
     add: function(a, b, lastResult) {
-        let result = 0000;
+        let result = 0;
         if (a && b) {
             result = a + b;
         } else if (a) {
@@ -54,3 +48,29 @@ let view = {
     }
 };
 
+// modify the variable declarations to pass arguments through the calc
+let a = undefined;
+let b = undefined;
+
+// run app
+// state (last result) before: 0 
+handler.add();
+// console.log: 0
+
+// ---
+a = 3
+// state before: 0
+handler.add();
+// console.log: 3
+
+// ---
+b = 5
+// state before: 3
+handler.add();
+// console.log: 8
+
+// ---
+a = undefined
+// state before: 8
+handler.add();
+// console.log: 13
